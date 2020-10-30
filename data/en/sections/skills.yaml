@@ -14,8 +14,9 @@ skills:
 - name: Testing
   summary: "Experienced with executing and creating test cases in integration testing. Also, experienced in educating, managing schedules for others."
 
-- name: Database
-  summary: "Know basic query such as CRUD, join tables, partition. Experienced with PostgreSQL, MySQL, Vertica, MongoDB."
+- name: Selenium
+  icon: "images/skills/selenium.png"
+  summary: "Capable of writing scripts and tracking bugs. Used for the main framework of integration tests."
 
 - name: PHP
   icon: "images/skills/php.png"
@@ -48,3 +49,6 @@ skills:
 - name: Git
   icon: "images/skills/git.png"
   summary: "Experienced with git-based development. Have experience in working with Bitbucket, AWS CodeCommit, GitLab, etc."
+
+- name: Database
+  summary: "Know basic query such as CRUD, join tables, partition. Experienced with PostgreSQL, MySQL, Vertica, MongoDB."
