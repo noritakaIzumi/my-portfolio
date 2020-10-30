@@ -1,26 +1,26 @@
-baseURL: http://example.org/
+baseURL: https://noritakaizumi.gitlab.io/
 languageCode: en-us
-title: "Toha"
+title: "FairySelect"
 theme: "toha"
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
-languages:
-  en:
-    languageName: English
-    weight: 1
-  fr:
-    languageName: Français
-    weight: 2
-  bn:
-    languageName: বাংলা
-    weight: 3
-  de:
-    languageName: Deutsch
-    weight: 4
-  id:
-    languageName: Indonesian
-    weight: 5
+# languages:
+#   en:
+#     languageName: English
+#     weight: 1
+#   fr:
+#     languageName: Français
+#     weight: 2
+#   bn:
+#     languageName: বাংলা
+#     weight: 3
+#   de:
+#     languageName: Deutsch
+#     weight: 4
+#   id:
+#     languageName: Indonesian
+#     weight: 5
 
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
@@ -54,9 +54,9 @@ params:
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   # It will be default to the theme logos if not provided.
   logo:
-    main: /assets/images/main-logo.png
-    inverted: /assets/images/inverted-logo.png
-    favicon: /assets/images/favicon.png
+    main: /assets/images/fairyselect/main-logo.png
+    inverted: /assets/images/fairyselect/inverted-logo.png
+    favicon: /assets/images/fairyselect/favicon.png
 
   # GitHub repo URL of your site
   gitRepo: https://github.com/hossainemruz/toha-example-site

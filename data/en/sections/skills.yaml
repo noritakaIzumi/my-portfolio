@@ -11,29 +11,35 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  icon: "images/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: "https://kubernetes.io/"
+- name: Testing
+  summary: "Experienced with executing and creating test cases in integration testing. Also, experienced in educating, managing schedules for others."
 
-- name: Go Development
+- name: Database
+  summary: "Know basic query such as CRUD, join tables, partition. Experienced with PostgreSQL, MySQL, Vertica, MongoDB."
+
+- name: PHP
+  icon: "images/skills/php.png"
+  summary: "Using as the main language for development. Capable of teaching, developing a web app from scratch."
+
+- name: Python
+  icon: "images/skills/python.png"
+  summary: "Capable of detailed design, coding. Experienced in using OSS tools to create standards of coding and security review."
+
+- name: Go
   icon: "images/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
+  summary: "Know basic Go programming. Experienced in \"echo\" web framework, using Slack API via Go."
 
-- name: Cloud Computing
-  icon: "images/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+- name: JavaScript
+  icon: "images/skills/javascript.svg"
+  summary: "Know getting/setting cookie, localStorage. Used for developing frontend."
 
 - name: Docker
   icon: "images/skills/docker.svg"
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  url: "https://www.docker.com/"
+  summary: "Dockerized several existing repositories in work."
 
-- name: Prometheus
-  icon: "images/skills/prometheus.png"
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  url: "https://prometheus.io/"
+- name: AWS
+  icon: "images/skills/aws.jpg"
+  summary: "Used for creating test environment. Experienced with CloudFormation, RDS, Lambda, Route 53, etc."
 
 - name: Linux
   icon: "images/skills/linux.png"
@@ -41,9 +47,4 @@ skills:
 
 - name: Git
   icon: "images/skills/git.png"
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  url: "https://git-scm.com/"
-
-- name: C++
-  icon: "images/skills/c++.png"
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+  summary: "Experienced with git-based development. Have experience in working with Bitbucket, AWS CodeCommit, GitLab, etc."
