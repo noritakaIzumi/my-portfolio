@@ -1,6 +1,7 @@
 # section information
 section:
-  name: Achievements
+  # name: Achievements
+  name: Hobbies
   id: achievements
   enable: true
   weight: 6
@@ -10,15 +11,21 @@ section:
 
 # Your achievements achievements
 achievements:
-- title: Best Presenter
-  image: images/achievements/presenter.jpg
-  summary: Best presenter in the 2020 XYZ conference.
-- title: Champion
-  image: images/achievements/sport.jpg
-  summary: Champion in cycling inter-city cycling championship 2020.
-- title: Graduation
-  image: images/achievements/graduation-cap.jpg
-  summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
-- title: Award Winner
-  image: images/achievements/woman-winner.jpg
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus architecto minus facere vero?
+# - title: Best Presenter
+#   image: images/achievements/presenter.jpg
+#   summary: Best presenter in the 2020 XYZ conference.
+# - title: Champion
+#   image: images/achievements/sport.jpg
+#   summary: Champion in cycling inter-city cycling championship 2020.
+# - title: Graduation
+#   image: images/achievements/graduation-cap.jpg
+#   summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
+# - title: Award Winner
+#   image: images/achievements/woman-winner.jpg
+#   summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus architecto minus facere vero?
+- title: Bowling
+  image: images/achievements/bowling_strike.png
+  summary: Always go bowling on holidays. Average almost 200. Have experience of paticipating in national sports festival.
+- title: Abacus
+  image: images/achievements/abacus.jpeg
+  summary: I was taking lessons from elementary school to high school (for 12 years). Won the prefectural tournament seven times in a row.

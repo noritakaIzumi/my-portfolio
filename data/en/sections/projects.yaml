@@ -12,53 +12,63 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Professional
-  filter: "professional"
-- name: Academic
-  filter: "academic"
+- name: Work
+  filter: "work"
 - name: Hobby
   filter: "hobby"
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: images/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
-
-- name: Tensorflow
-  logo: images/projects/tensorflow.png
+- name: AD EBiS (Management Console)
+  # logo:
   role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
-  #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning","academic"]
+  timeline: "Apr 2020 - Sep 2020"
+  # repo: "" # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  url: https://www.ebis.ne.jp/  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Displaying measured data of ads.
+  tags: ["work", "frontend", "backend", "cloud"]
 
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
+- name: AD EBiS (backend)
+  # logo:
+  role: Developer
+  timeline: "Dec 2018 - Mar 2020"
+  # repo: ""
+  url: https://www.ebis.ne.jp/
+  summary: Analyze access info of measurement websites.
+  tags: ["work", "backend"]
 
-- name: Nocode
-  logo: images/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
+- name: Fresh graduate training programs
+  # logo:
+  role: Developer
+  timeline: "Oct 2018 - Nov 2018"
+  # repo: ""
+  # url: ""
+  summary: Learn programming languages including PHP and SQL, company products and services.
+  tags: ["work", "frontend", "backend"]
 
-- name: Toha
-  logo: images/projects/toha.png
+- name: Automated stamping system of TeamSpirit
+  # logo:
   role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+  timeline: "Feb 2019 - Apr 2019"
+  repo: https://github.com/noritakaIzumi/autologin_salesforce
+  #url: ""
+  summary: Selenium automatically opens browser, fills in username and password, and presses stamping button.
+  tags: ["hobby", "frontend", "selenium"]
+
+- name: Word Games by Golang
+  logo: images/projects/anki_card.png
+  role: Owner
+  timeline: "May 2020 - May 2020"
+  # repo: ""
+  url: https://gitlab.com/technical-study/word-games-by-golang
+  summary: Studying Go and linked list.
+  tags: ["hobby", "backend", "linkedList"]
+
+- name: Flash Anzan (mental arithmetic)
+  logo: images/projects/flash.ico
+  role: Owner
+  timeline: "May 2020 - May 2020"
+  repo: https://github.com/noritakaIzumi/flash_anzan_web
+  # url: ""
+  summary: Sum the blinking numbers on the display.<br>[Play](https://noritakaizumi.github.io/flash_anzan/)
+  tags: ["hobby", "frontend", "anzan"]
