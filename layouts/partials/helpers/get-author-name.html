@@ -1,0 +1,12 @@
+{{ $authorName:= site.Params.author.name }}
+{{ if site.Data.site.author}}
+    {{ $authorName = site.Data.site.author.name }}
+{{ end}}
+{{ if eq (printf "%T" .Params.author ) "maps.Params" }}
+    {{ with .Params.author }}
+        {{ if .name }}
+        {{ $authorName = .name }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ return $authorName }}
