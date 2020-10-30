@@ -37,10 +37,11 @@ markup:
     ordered: false
 
 # Enable Google Analytics
-googleAnalytics: UA-XXXXXXXXX-X
+# googleAnalytics: UA-XXXXXXXXX-X
+googleAnalytics: 251093734
 
 # Enable Disqus forum
-disqusShortname: does-not-exist
+# disqusShortname: does-not-exist
 
 # Enable global emoji support
 enableEmoji: true
@@ -62,7 +63,8 @@ params:
   gitRepo: https://github.com/hossainemruz/toha-example-site
 
   # specify whether you want to write blog post or not
-  enableBlogPost: true
+  # enableBlogPost: true
+  enableBlogPost: false
 
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
@@ -70,4 +72,5 @@ params:
   # Provide newsletter configuration. This feature hasn't been implemented yet.
   # Currently, you can just hide it from the footer.
   newsletter:
-    enable: true
+    # enable: true
+    enable: false
