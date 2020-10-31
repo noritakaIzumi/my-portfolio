@@ -41,7 +41,7 @@ markup:
 googleAnalytics: 251093734
 
 # Enable Disqus forum
-# disqusShortname: does-not-exist
+disqusShortname: fairy-select
 
 # Enable global emoji support
 enableEmoji: true
@@ -63,8 +63,7 @@ params:
   gitRepo: https://github.com/hossainemruz/toha-example-site
 
   # specify whether you want to write blog post or not
-  # enableBlogPost: true
-  enableBlogPost: false
+  enableBlogPost: true
 
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
@@ -72,5 +71,4 @@ params:
   # Provide newsletter configuration. This feature hasn't been implemented yet.
   # Currently, you can just hide it from the footer.
   newsletter:
-    # enable: true
     enable: false
