@@ -38,7 +38,7 @@ markup:
 
 # Enable Google Analytics
 # googleAnalytics: UA-XXXXXXXXX-X
-googleAnalytics: 251093734
+googleAnalytics: G-TCH9X4GKPZ
 
 # Enable Disqus forum
 disqusShortname: fairy-select
@@ -60,7 +60,7 @@ params:
     favicon: /assets/images/fairyselect/favicon.png
 
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hossainemruz/toha-example-site
+  gitRepo: https://gitlab.com/noritakaIzumi/my-portfolio
 
   # specify whether you want to write blog post or not
   enableBlogPost: true
