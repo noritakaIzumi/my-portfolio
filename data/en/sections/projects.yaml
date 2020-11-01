@@ -37,15 +37,6 @@ projects:
   summary: Analyze access info of measurement websites.
   tags: ["work", "backend"]
 
-- name: Fresh graduate training programs
-  # logo:
-  role: Developer
-  timeline: "Oct 2018 - Nov 2018"
-  # repo: ""
-  # url: ""
-  summary: Learn programming languages including PHP and SQL, company products and services.
-  tags: ["work", "frontend", "backend"]
-
 - name: Automated stamping system of TeamSpirit
   # logo:
   role: Owner
