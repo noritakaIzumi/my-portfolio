@@ -12,5 +12,5 @@ menu:
     name: Github Pages
     identifier: deploy-site-github
     parent: deploy-site
-    weight: 重み。自然数。小さいほど一覧の最初に来る。
+    weight: 重み。小さいほど一覧の最初に来る。
 ---
