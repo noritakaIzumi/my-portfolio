@@ -80,7 +80,7 @@ params:
   title: Fairy Select
   description: Portfolio and personal blog of Noritaka IZUMI.
   images:
-    - "images/background.jpg"
+    - "images/man.png"
 
   # Follow site title.
   subtitle: "My Portfolio"
