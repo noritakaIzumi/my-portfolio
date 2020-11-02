@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{- .Site.Title -}}</title>
+    <title>{{- .Site.Title -}}{{ if .Site.Params.subtitle }}{{ .Site.Params.glue }}{{ .Site.Params.subtitle }}{{ end }}</title>
     {{ $siteDescription := .Site.Params.description }}
     {{ if (index .Site.Data .Site.Language.Lang).site }}
       {{ $siteConfig := (index .Site.Data .Site.Language.Lang).site }}

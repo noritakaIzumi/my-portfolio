@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ .Page.Title }}</title>
+    <title>{{ .Page.Title }}{{ .Site.Params.glue }}{{ .Site.Params.title }}</title>
     <!------ ADD COMMON HEADERS -------->
     {{- partial "header.html" . -}}
 

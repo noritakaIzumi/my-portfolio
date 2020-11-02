@@ -6,6 +6,7 @@
 />
 <link rel="stylesheet" href="{{ "/assets/css/layouts/single.css" | relURL }}"/>
 <link rel="stylesheet" href="{{ "/assets/css/navigators/sidebar.css" | relURL }}">
+<link rel="stylesheet" href="{{ "/assets/css/share.css" | relURL }}">
 {{ end }}
 
 {{ define "navbar" }}
@@ -53,6 +54,9 @@
         <div class="post-content" id="post-content">
           {{ .Page.Content }}
         </div>
+
+        <!--- Share button --->
+        {{ partial "share.html" . }}
 
         <!--- Improve this page button --->
         {{ if site.Params.GitRepo }}
