@@ -56,10 +56,10 @@ skills:
   summary: "Experienced with git-based development. Have experience in working with Bitbucket, AWS CodeCommit, GitLab, etc."
   url: "https://git-scm.com/"
 
-- name: Testing
+- name: Software Testing
   summary: "Experienced with executing and creating test cases in integration testing. Also, experienced in educating, managing schedules for others."
-  url: ""
+  url: "https://en.wikipedia.org/wiki/Software_testing"
 
 - name: Database
   summary: "Know basic query such as CRUD, join tables, partition. Experienced with PostgreSQL, MySQL, Vertica, MongoDB."
-  url: ""
+  url: "https://en.wikipedia.org/wiki/Database"
