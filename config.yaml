@@ -86,5 +86,8 @@ params:
   subtitle: "My Portfolio"
   glue: " - "
 
+  # Share on Twitter
+  twitterUser: "@cs_mzrt_shkmndl"
+
 taxonomies:
   series: series
