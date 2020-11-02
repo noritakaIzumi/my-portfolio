@@ -46,6 +46,9 @@ disqusShortname: fairy-select
 # Enable global emoji support
 enableEmoji: true
 
+# 日本語の文字数を正しく数える
+hasCJKLanguage: true
+
 # Custom parameters
 params:
   # background image of the landing page
@@ -72,3 +75,16 @@ params:
   # Currently, you can just hide it from the footer.
   newsletter:
     enable: false
+
+  # OGP meta tags.
+  title: Fairy Select
+  description: Portfolio and personal blog of Noritaka IZUMI.
+  images:
+    - "images/background.jpg"
+
+  # Follow site title.
+  subtitle: "My Portfolio"
+  glue: " - "
+
+taxonomies:
+  series: series
