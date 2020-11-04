@@ -7,11 +7,6 @@ news_keywords:
   - ポートフォリオ
   - Hugo
   - 転職
-menu:
-  sidebar:
-    name: このサイトについて
-    identifier: introduction
-    weight: 0
 ---
 
 みなさんこんにちは。早速ですが、
@@ -32,7 +27,7 @@ menu:
 
 ## このサイトについて
 
-このサイトは [`Hugo`](https://gohugo.io/) という、静的サイトビルダを使用しています。
+このサイトは [`Hugo`](https://gohugo.io/) という、静的サイトジェネレータを使用しています。
 
 サイトの中身は以下の通りです。
 
