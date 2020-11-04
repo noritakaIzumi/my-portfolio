@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy"
 date: 2020-11-04T11:07:11+09:00
-description: 記事の説明
+description: プライバシーポリシー
 menu:
   sidebar:
     name: Privacy Policy
