@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-date: 2020-06-08T06:00:20+06:00
+date: 2020-11-04T11:07:11+09:00
 description: 記事の説明
 menu:
   sidebar:
