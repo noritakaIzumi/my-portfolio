@@ -6,4 +6,5 @@
 
 # Posts.
 /content/posts
+/static/images/posts
 !.gitkeep
