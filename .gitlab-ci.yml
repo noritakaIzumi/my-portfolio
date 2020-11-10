@@ -16,10 +16,12 @@ test:
 pages:
   script:
     - "apk update \
-  && apk --no-cache add git"
+    && apk --no-cache add git"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git \
+    && rm -rf my-portfolio-posts/.git \
     && mv my-portfolio-posts content/posts"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts-images.git \
+    && rm -rf my-portfolio-posts-images/.git \
     && mv my-portfolio-posts-images static/images/posts"
     - hugo
   artifacts:
