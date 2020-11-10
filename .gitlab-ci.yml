@@ -15,6 +15,9 @@ test:
 
 pages:
   script:
+    - "apk update \
+  && apk --no-cache add git"
+    - git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git content/posts
     - hugo
   artifacts:
     paths:
