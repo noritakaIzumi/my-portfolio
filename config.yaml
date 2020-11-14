@@ -63,7 +63,7 @@ params:
     favicon: /assets/images/fairyselect/favicon.png
 
   # GitHub repo URL of your site
-  gitRepo: https://gitlab.com/noritakaIzumi/my-portfolio
+  gitRepo: https://gitlab.com/noritakaIzumi/my-portfolio-posts
 
   # specify whether you want to write blog post or not
   enableBlogPost: true
