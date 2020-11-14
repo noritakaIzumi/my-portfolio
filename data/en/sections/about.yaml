@@ -35,21 +35,21 @@ socialLinks:
   icon: "fab fa-github"
   url: "https://github.com/noritakaIzumi"
 
-# - name: Stackoverflow
-#   icon: "fab fa-stack-overflow"
-#   url: "#"
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/noritaka-i-266aa567/"
 
 - name: Facebook
   icon: "fab fa-facebook"
   url: "https://www.facebook.com/noritaka.izumi/"
 
-- name: LinkedIn
-  icon: "fab fa-linkedin"
-  url: "https://www.linkedin.com/in/noritaka-i-266aa567/"
+- name: Stackoverflow
+  icon: "fab fa-stack-overflow"
+  url: "https://ja.stackoverflow.com/users/31354/noritaka-izumi"
 
-# - name: Twitter
-#   icon: "fab fa-twitter"
-#   url: "#"
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/IzumiNoritaka"
 
 # your soft skills
 # give the percentage between 50 to 100 with 5 intervals.
