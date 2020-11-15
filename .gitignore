@@ -5,6 +5,6 @@
 /public
 
 # Posts.
-/content/posts
+/content
 /static/images/posts
 !.gitkeep

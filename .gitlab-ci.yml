@@ -19,7 +19,7 @@ pages:
     && apk --no-cache add git"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git \
     && rm -rf my-portfolio-posts/.git \
-    && mv my-portfolio-posts content/posts"
+    && mv my-portfolio-posts content"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts-images.git \
     && rm -rf my-portfolio-posts-images/.git \
     && mv my-portfolio-posts-images static/images/posts"
