@@ -24,8 +24,9 @@ pages:
     && rm -rf my-portfolio-posts-images/.git \
     && mv my-portfolio-posts-images static/images/posts"
     - hugo --gc --ignoreCache
+    - cp public/{index,feed}.xml
   artifacts:
     paths:
       - public
-  only:
-    - master
+#  only:
+#    - master
