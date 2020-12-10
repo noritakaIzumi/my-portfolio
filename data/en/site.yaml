@@ -7,5 +7,7 @@ description: Portfolio and personal blog of Noritaka IZUMI.
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
 customMenus:
-- name: Policy
-  url: /posts/about/
+  - name: RSS
+    url: /index.xml
+  - name: Policy
+    url: /posts/about/
