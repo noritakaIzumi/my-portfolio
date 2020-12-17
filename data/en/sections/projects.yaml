@@ -10,34 +10,54 @@ section:
 
 # filter buttons
 buttons:
-- name: All
-  filter: "all"
+  - name: All
+    filter: "all"
+  - name: OSS
+    filter: "oss"
 
 # your projects
 projects:
-- name: Automated stamping system of TeamSpirit
-  # logo:
-  role: Owner
-  timeline: "Feb 2019 - Apr 2019"
-  repo: https://github.com/noritakaIzumi/autologin_salesforce
-  #url: ""
-  summary: Selenium automatically opens browser, fills in username and password, and presses stamping button.
-  tags: ["hobby", "ruby", "selenium"]
+  - name: Coding drills
+    logo: /images/projects/study_night_girl.png
+    role: Owner
+    timeline: "Dec 2020 - Present"
+    repo: https://github.com/noritakaIzumi/coding-drills
+    # url: ""
+    summary: A mock app of <a href="https://repl.it/" target="_blank">Repl.it</a>. Write codes on your browser and run them.
+    tags: ["hobby", "python", "api"]
 
-- name: Word Games by Golang
-  logo: images/projects/anki_card.png
-  role: Owner
-  timeline: "May 2020 - May 2020"
-  # repo: ""
-  url: https://gitlab.com/technical-study/word-games-by-golang
-  summary: Studying Go and linked list.
-  tags: ["hobby", "go", "linkedList"]
+  - name: Toha
+    logo: /images/projects/toha.png
+    role: Contributor
+    timeline: "Nov 2020 - Present"
+    repo: https://github.com/hugo-toha/toha
+    # url: ""
+    summary: A Hugo theme for personal portfolio.
+    tags: ["hobby", "oss", "hugo", "theme"]
 
-- name: Flash Anzan (mental arithmetic)
-  logo: images/projects/flash.ico
-  role: Owner
-  timeline: "May 2020 - May 2020"
-  repo: https://github.com/noritakaIzumi/flash_anzan_web
-  # url: ""
-  summary: Sum the blinking numbers on the display.<br>[Play](https://noritakaizumi.github.io/flash_anzan/)
-  tags: ["hobby", "anzan"]
+  - name: Flash Anzan (mental arithmetic)
+    logo: /images/projects/flash.ico
+    role: Owner
+    timeline: "May 2020 - Present"
+    repo: https://github.com/noritakaIzumi/flash_anzan_web
+    # url: ""
+    summary: Sum the blinking numbers on the display.<br><a href="https://flash-anzan.fairy-select.com/" target="_blank">Play</a>
+    tags: ["hobby", "javascript", "anzan"]
+
+  - name: Word Games by Golang
+    logo: /images/projects/anki_card.png
+    role: Owner
+    timeline: "May 2020 - May 2020"
+    repo: https://github.com/noritakaIzumi/word-games-by-golang
+    # url: ""
+    summary: Studying Go and linked list.
+    tags: ["hobby", "go", "linkedList"]
+
+  - name: Automated stamping system of TeamSpirit
+    # logo:
+    role: Owner
+    timeline: "Feb 2019 - Apr 2019"
+    repo: https://github.com/noritakaIzumi/autologin_salesforce
+    #url: ""
+    summary: Selenium automatically opens browser, fills in username and password, and presses stamping button.
+    tags: ["hobby", "ruby", "selenium"]
