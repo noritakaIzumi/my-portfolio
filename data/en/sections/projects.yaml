@@ -23,7 +23,7 @@ projects:
     timeline: "Dec 2020 - Present"
     repo: https://github.com/noritakaIzumi/coding-drills
     # url: ""
-    summary: A mock app of <a href="https://repl.it/" target="_blank">Repl.it</a>. Write codes on your browser and run them.
+    summary: A mock app of [Repl.it](https://repl.it/) . Write codes on your browser and run them.
     tags: ["hobby", "python", "api"]
 
   - name: Toha
@@ -41,7 +41,7 @@ projects:
     timeline: "May 2020 - Present"
     repo: https://github.com/noritakaIzumi/flash_anzan_web
     # url: ""
-    summary: Sum the blinking numbers on the display.<br><a href="https://flash-anzan.fairy-select.com/" target="_blank">Play</a>
+    summary: Sum the blinking numbers on the display.
     tags: ["hobby", "javascript", "anzan"]
 
   - name: Word Games by Golang
