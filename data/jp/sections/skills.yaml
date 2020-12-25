@@ -1,0 +1,65 @@
+# section information
+section:
+  name: スキル
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: PHP
+  icon: "images/skills/php.png"
+  summary: "開発のメイン言語です。スクラッチで Web アプリケーションを開発、人に教えることができます。"
+  url: "https://www.php.net/"
+
+- name: Python
+  icon: "images/skills/python.png"
+  summary: "詳細設計からコーディングまで経験があります。セキュリティレビューの基準を OSS を使用して構築しました。"
+  url: "https://www.python.org/"
+
+- name: Go
+  icon: "images/skills/go.png"
+  summary: "Web フレームワーク「Echo」を使用して、朝会の発表者を Slack に自動投稿する機能を作成しました。"
+  url: "https://golang.org/"
+
+- name: JavaScript
+  icon: "images/skills/javascript.svg"
+  summary: "クッキーやローカルストレージの設定など、フロントエンドでの実装経験があります。"
+  url: "https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
+
+- name: Docker
+  icon: "images/skills/docker.svg"
+  summary: "既存の開発リポジトリを Docker 化しました。"
+  url: "https://www.docker.com/"
+
+- name: AWS
+  icon: "images/skills/aws.jpg"
+  summary: "テスト環境の作成に使用しました。 CloudFormation, RDS, Lambda, Route 53 などの経験があります。"
+  url: "https://aws.amazon.com/"
+
+- name: Selenium
+  icon: "images/skills/selenium.png"
+  summary: "スクリプトの作成、バグの追跡経験があります。結合テストのフレームワークに使用した経験があります。"
+  url: "https://www.selenium.dev/documentation/"
+
+- name: Linux
+  icon: "images/skills/linux.png"
+  summary: "メインの開発環境で使用していました。シェルスクリプトを書くことは可能です。"
+  url: "https://en.wikipedia.org/wiki/Linux"
+
+- name: Git
+  icon: "images/skills/git.png"
+  summary: "Git ベースの開発経験があります。 BitBucket, AWS CodeCommit, GitLab, GitHub での開発経験があります。"
+  url: "https://git-scm.com/"
+
+- name: ソフトウェアテスト
+  summary: "結合テストのテストケースの実施および作成経験があります。その他、教育やスケジュール管理の経験があります。"
+  url: "https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%86%E3%82%B9%E3%83%88"
+
+- name: データベース
+  summary: "CRUD 操作、テーブル結合、パーティションなどの経験があります。使用経験のあるデータベースは PostgreSQL, MySQL, Vertica, MongoDB です。"
+  url: "https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9"

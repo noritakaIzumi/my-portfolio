@@ -1,0 +1,47 @@
+# section information
+section:
+  name: 経歴
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your experiences
+experiences:
+- company:
+    name: ユニティ株式会社
+    url: "https://www.unitea.jp/"
+    location: 大阪支社
+    # company overview
+    overview: ウェブサイトの作成と運営をしている会社です。エンタメ系のお客様を多く持っています。
+  positions:
+  - designation: ソフトウェアエンジニア
+    start: 2020 年 11 月
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: 現在
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - WordPress および Movable Type に関する業務を行っています。
+
+- company:
+    name: 株式会社イルグルム
+    url: "https://www.yrglm.co.jp/"
+    location: 大阪本社
+    overview: 広告効果測定プラットフォーム [AD EBiS](https://www.ebis.ne.jp/) で有名な会社です。
+  positions:
+  - designation: アプリエンジニア
+    start: 2018 年 12 月
+    end: 2020 年 9 月
+    responsibilities:
+    - PHP, Python および Go の設計と実装を行いました。
+    - スケジュール、テストケース保守、教育を含めた AD EBiS の結合テスト管理を行いました。
+    - 開発環境を Docker 化するなどの改善を行いました。
+    - AD EBiS 内のデータについて調査と分析を行いました。
+  - designation: 新卒エンジニア
+    start: 2018 年 10 月
+    end: 2018 年 11 月
+    responsibilities:
+    - 会社の製品やサービスについて学習しました。
+    - エンジニア研修を受講しました。

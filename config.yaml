@@ -5,10 +5,10 @@ theme: "toha"
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
-# languages:
-#   en:
-#     languageName: English
-#     weight: 1
+languages:
+  en:
+    languageName: English
+    weight: 1
 #   fr:
 #     languageName: Français
 #     weight: 2
@@ -21,16 +21,20 @@ theme: "toha"
 #   id:
 #     languageName: Indonesian
 #     weight: 5
-
+  jp:
+    languageName: Japanese
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
-# DefaultContentLanguage: fr
+DefaultContentLanguage: en
 
 # Allow raw html in markdown file
 markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    codeFences: true
+    lineNos: true
   tableOfContents:
     startLevel: 2
     endLevel: 6
