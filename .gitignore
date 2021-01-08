@@ -3,6 +3,7 @@
 
 # Compiled files.
 /public
+/resources
 
 # Posts.
 /content

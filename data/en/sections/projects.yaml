@@ -18,7 +18,7 @@ buttons:
 # your projects
 projects:
   - name: Coding drills
-    logo: /images/projects/study_night_girl.png
+    logo: /images/sections/projects/study_night_girl.png
     role: Owner
     timeline: "Dec 2020 - Present"
     repo: https://github.com/noritakaIzumi/coding-drills
@@ -27,7 +27,7 @@ projects:
     tags: ["hobby", "python", "api"]
 
   - name: Toha
-    logo: /images/projects/toha.png
+    logo: /images/sections/projects/toha.png
     role: Contributor
     timeline: "Nov 2020 - Present"
     repo: https://github.com/hugo-toha/toha
@@ -36,7 +36,7 @@ projects:
     tags: ["hobby", "oss", "hugo", "theme"]
 
   - name: Flash Anzan (mental arithmetic)
-    logo: /images/projects/flash.ico
+    logo: /images/sections/projects/flash.png
     role: Owner
     timeline: "May 2020 - Present"
     repo: https://github.com/noritakaIzumi/flash_anzan_web
@@ -45,7 +45,7 @@ projects:
     tags: ["hobby", "javascript", "anzan"]
 
   - name: Word Games by Golang
-    logo: /images/projects/anki_card.png
+    logo: /images/sections/projects/anki_card.png
     role: Owner
     timeline: "May 2020 - May 2020"
     repo: https://github.com/noritakaIzumi/word-games-by-golang

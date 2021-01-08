@@ -12,47 +12,47 @@ section:
 # Give a summary of you each skill in the summary section.
 skills:
 - name: PHP
-  icon: "images/skills/php.png"
+  logo: "/images/sections/skills/php.png"
   summary: "Using as the main language for development. Capable of teaching, developing a web app from scratch."
   url: "https://www.php.net/"
 
 - name: Python
-  icon: "images/skills/python.png"
+  logo: "/images/sections/skills/python.png"
   summary: "Capable of detailed design, coding. Experienced in using OSS tools to create standards of coding and security review."
   url: "https://www.python.org/"
 
 - name: Go
-  icon: "images/skills/go.png"
+  logo: "/images/sections/skills/go.png"
   summary: "Know basic Go programming. Experienced in \"echo\" web framework, using Slack API via Go."
   url: "https://golang.org/"
 
 - name: JavaScript
-  icon: "images/skills/javascript.svg"
+  logo: "/images/sections/skills/javascript.svg"
   summary: "Know getting/setting cookie, localStorage. Used for developing frontend."
   url: "https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
 
 - name: Docker
-  icon: "images/skills/docker.svg"
+  logo: "/images/sections/skills/docker.svg"
   summary: "Dockerized several existing repositories in work."
   url: "https://www.docker.com/"
 
 - name: AWS
-  icon: "images/skills/aws.jpg"
+  logo: "/images/sections/skills/aws.jpg"
   summary: "Used for creating test environment. Experienced with CloudFormation, RDS, Lambda, Route 53, etc."
   url: "https://aws.amazon.com/"
 
 - name: Selenium
-  icon: "images/skills/selenium.png"
+  logo: "/images/sections/skills/selenium.png"
   summary: "Capable of writing scripts and tracking bugs. Used for the main framework of integration tests."
   url: "https://www.selenium.dev/documentation/"
 
 - name: Linux
-  icon: "images/skills/linux.png"
+  logo: "/images/sections/skills/linux.png"
   summary: "Using as the main operating system. Capable of writing bash/shell scripts."
   url: "https://en.wikipedia.org/wiki/Linux"
 
 - name: Git
-  icon: "images/skills/git.png"
+  logo: "/images/sections/skills/git.png"
   summary: "Experienced with git-based development. Have experience in working with Bitbucket, AWS CodeCommit, GitLab, etc."
   url: "https://git-scm.com/"
 

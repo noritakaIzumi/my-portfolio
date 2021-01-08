@@ -4,9 +4,9 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
 />
-<link rel="stylesheet" href="{{ "/assets/css/layouts/single.css" | relURL }}"/>
-<link rel="stylesheet" href="{{ "/assets/css/navigators/sidebar.css" | relURL }}">
-<link rel="stylesheet" href="{{ "/assets/css/share.css" | relURL }}">
+<link rel="stylesheet" href="{{ "/css/layouts/single.css" | relURL }}"/>
+<link rel="stylesheet" href="{{ "/css/navigators/sidebar.css" | relURL }}">
+<link rel="stylesheet" href="{{ "/css/share.css" | relURL }}">
 {{ end }}
 
 {{ define "navbar" }}
@@ -36,13 +36,13 @@
   <div class="content">
     <div class="container p-0 read-area">
       <!--Hero Area-->
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . | relURL }});'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'>
       </div>
 
       <!--Content Start-->
       <div class="page-content">
         <div class="author-profile ml-auto align-self-lg-center">
-          <img class="rounded-circle" src='{{ partial "helpers/get-author-image.html" . | relURL }}'/>
+          <img class="rounded-circle" src='{{ partial "helpers/get-author-image.html" . }}'/>
           <h5 class="author-name">{{ partial "helpers/get-author-name.html" . }}</h5>
           <p>{{ .Page.Date.Format "January 2, 2006" }}</p>
         </div>
@@ -55,13 +55,10 @@
           {{ .Page.Content }}
         </div>
 
-        <!--- Share button --->
-        {{ partial "share.html" . }}
-
         <!--- Improve this page button --->
         {{ if site.Params.GitRepo }}
           <div class="btn-improve-page">
-              <a href="{{ site.Params.GitRepo }}/edit/master/{{ .File.Path }}">
+              <a href="{{ site.Params.GitRepo }}/edit/master/content/{{ .File.Path }}">
                 <i class="fas fa-code-branch"></i>
                 {{ i18n "improve_this_page" }}
               </a>
@@ -101,7 +98,7 @@
 
 {{ define "scripts" }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-<script src="{{ "/assets/js/single.js" | relURL }}"></script>
+<script src="{{ "/js/single.js" | relURL }}"></script>
 <script>
   hljs.initHighlightingOnLoad();
 </script>

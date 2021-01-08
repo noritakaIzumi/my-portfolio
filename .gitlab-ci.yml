@@ -2,7 +2,7 @@
 ---
 # All available Hugo versions are listed here:
 # https://gitlab.com/pages/hugo/container_registry
-image: registry.gitlab.com/pages/hugo:0.79.0
+image: registry.gitlab.com/pages/hugo:0.80.0
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -20,9 +20,9 @@ pages:
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git \
     && rm -rf my-portfolio-posts/.git \
     && mv my-portfolio-posts content"
-    - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts-images.git \
-    && rm -rf my-portfolio-posts-images/.git \
-    && mv my-portfolio-posts-images static/images/posts"
+#    - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts-images.git \
+#    && rm -rf my-portfolio-posts-images/.git \
+#    && mv my-portfolio-posts-images static/images/posts"
     - hugo --gc --ignoreCache
   artifacts:
     paths:
