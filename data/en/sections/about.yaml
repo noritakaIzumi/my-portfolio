@@ -39,10 +39,6 @@ socialLinks:
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/noritaka-i-266aa567/"
 
-- name: Facebook
-  icon: "fab fa-facebook"
-  url: "https://www.facebook.com/noritaka.izumi/"
-
 - name: Stackoverflow
   icon: "fab fa-stack-overflow"
   url: "https://ja.stackoverflow.com/users/31354/noritaka-izumi"
