@@ -69,7 +69,7 @@ params:
   gitRepo: https://gitlab.com/noritakaIzumi/my-portfolio-posts
 
   # specify whether you want to write blog post or not
-  enableBlogPost: true
+  enableBlogPost: false
 
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
