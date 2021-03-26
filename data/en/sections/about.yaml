@@ -23,10 +23,6 @@ summary: 'I am an vigorous software engineer with 2 years of working experience.
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
-- name: Email
-  icon: "fas fa-envelope"
-  url: "noritaka.izumi@gmail.com"
-
 - name: GitLab
   icon: "fab fa-gitlab"
   url: "https://gitlab.com/noritakaIzumi"
