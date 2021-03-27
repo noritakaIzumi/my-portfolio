@@ -22,6 +22,23 @@ theme: "toha"
 #   id:
 #     languageName: Indonesian
 #     weight: 5
+#  es:
+#    languageName: Spanish
+#    weight: 6
+#  it:
+#    languageName: Italian
+#    weight: 7
+#  cn:
+#    languageName: 中文
+#    weight: 8
+
+# At least HTML and JSON are required for the main HTML content and
+# client-side JavaScript search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 # Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
 # DefaultContentLanguage: en
@@ -67,6 +84,7 @@ params:
 
   # GitHub repo URL of your site
   gitRepo: https://gitlab.com/noritakaIzumi/my-portfolio-posts
+  gitBranch: master
 
   # specify whether you want to write blog post or not
   enableBlogPost: false

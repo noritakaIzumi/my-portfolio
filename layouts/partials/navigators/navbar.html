@@ -1,5 +1,5 @@
 {{/*  default logos  */}}
-{{ $mainLogo := "/images/site/main-logo.png" }}
+{{ $mainLogo := "/images/main-logo.png" }}
 {{ $invertedLogo := "/images/inverted-logo.png" }}
 
 {{/*  if custom logo is used, them  */}}
@@ -22,6 +22,11 @@
   {{ $invertedLogo = $invertedLogo.Resize "42x" }}
 {{ end }}
 {{ $invertedLogo = $invertedLogo.RelPermalink}}
+
+{{ $customMenus := site.Params.customMenus }}
+{{ if (index site.Data site.Language.Lang).site.customMenus }}
+  {{ $customMenus = (index site.Data site.Language.Lang).site.customMenus }}
+{{ end }}
 
 {{ $sections := site.Data.sections }}
 {{ if (index site.Data site.Language.Lang).sections }}
@@ -50,21 +55,37 @@
           <a class="nav-link" href="#home">{{ i18n "home" }}</a>
         </li>
         {{ if $sections }}
+          {{ $sectionCount := 0}}
           {{ range sort $sections "section.weight" }}
             {{ if and (.section.enable) (.section.showOnNavbar)}}
-              {{ $sectionID := replace (lower .section.name) " " "-"  }}
-              {{ if .section.id }}
-                {{ $sectionID = .section.id }}
+              {{ $sectionCount  = add $sectionCount 1}}
+              {{ if lt $sectionCount 5 }}
+                <li class="nav-item">
+                  <a class="nav-link" href="#{{ partial "helpers/get-section-id.html" . }}">{{ .section.name }}</a>
+                </li>
               {{ end }}
-              <li class="nav-item">
-                <a class="nav-link" href="#{{ $sectionID }}">{{ .section.name }}</a>
-              </li>
             {{ end }}
           {{- end }}
+          {{ if gt $sectionCount 5 }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{i18n "more" }}</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {{ $sectionCount := 0 }}
+                {{ range sort $sections "section.weight" }}
+                  {{ if and (.section.enable) (.section.showOnNavbar) }}
+                    {{ $sectionCount  = add $sectionCount 1}}
+                    {{ if gt $sectionCount 5 }}
+                      <a class="dropdown-item" href="#{{ partial "helpers/get-section-id.html" . }}">{{ .section.name }}</a>
+                    {{ end }}
+                  {{ end }}
+                {{- end }}
+              </div>
+            </li>
+          {{ end }}
         {{- end }}
         {{ $hasCustomMenus:= false }}
-        {{ if and site.Params.customMenus }}
-          {{ if gt (len site.Params.customMenus) 0 }}
+        {{ if $customMenus }}
+          {{ if gt (len $customMenus) 0 }}
             {{ $hasCustomMenus = true }}
           {{ end }}
         {{ end }}
@@ -76,7 +97,7 @@
             <a class="nav-link" id="blog-link" href="{{ "/posts" | relLangURL }}">{{ i18n "posts" }}</a>
           </li>
         {{ end }}
-        {{ range  (index site.Data site.Language.Lang).site.customMenus }}
+        {{ range $customMenus }}
           <li class="nav-item">
             <a class="nav-link" href="{{ .url }}">{{ .name }}</a>
           </li>

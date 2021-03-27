@@ -4,7 +4,7 @@ section:
   name: Hobbies
   id: achievements
   enable: false
-  weight: 6
+  weight: 7
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true

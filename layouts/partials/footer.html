@@ -47,7 +47,7 @@
                 {{ $sectionID = .section.id }}
               {{ end }}
               <li class="nav-item">
-                <a class="smooth-scroll" href="#{{ $sectionID }}">{{ .section.name }}</a>
+                <a class="smooth-scroll" href="/#{{ $sectionID }}">{{ .section.name }}</a>
               </li>
             {{ end }}
           {{- end }}
@@ -97,7 +97,7 @@
           Toha
         </a>
       </div>
-      <div class="col-md-4 text-center">{{ $copyrightNotice }}</div>
+      <div class="col-md-4 text-center">{{ $copyrightNotice | markdownify }}</div>
       <div class="col-md-4 text-right">
         <a id="hugo" href="https://gohugo.io/">{{ i18n "hugoAttributionText" }}
         <img
