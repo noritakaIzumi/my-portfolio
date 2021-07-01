@@ -17,10 +17,19 @@ buttons:
 
 # your projects
 projects:
+  - name: Chikku Takku
+    logo: /images/sections/projects/chikku-takku.png
+    role: Owner
+    timeline: "Jun 2021 - Present"
+    repo: https://github.com/noritakaIzumi/clock_app
+    # url: ""
+    summary: A desktop widget of clock.
+    tags: ["hobby", "electron"]
+
   - name: Coding drills
     logo: /images/sections/projects/study_night_girl.png
     role: Owner
-    timeline: "Dec 2020 - Present"
+    timeline: "Dec 2020 - Dec 2020"
     repo: https://github.com/noritakaIzumi/coding-drills
     # url: ""
     summary: A mock app of [Repl.it](https://repl.it/) . Write codes on your browser and run them.
@@ -29,7 +38,7 @@ projects:
   - name: Toha
     logo: /images/sections/projects/toha.png
     role: Contributor
-    timeline: "Nov 2020 - Present"
+    timeline: "Nov 2020 - Dec 2020"
     repo: https://github.com/hugo-toha/toha
     # url: ""
     summary: A Hugo theme for personal portfolio.
@@ -42,7 +51,7 @@ projects:
     repo: https://github.com/noritakaIzumi/flash_anzan_web
     # url: ""
     summary: Sum the blinking numbers on the display.
-    tags: ["hobby", "javascript", "anzan"]
+    tags: ["hobby", "javascript", "anzan", "electron"]
 
   - name: Word Games by Golang
     logo: /images/sections/projects/anki_card.png

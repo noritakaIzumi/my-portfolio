@@ -1,15 +1,28 @@
 # Copyright Notice
 copyright: © 2020 Noritaka IZUMI
 
+# A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
+disclaimer: "This theme is under MIT license. So, you can use it for non-commercial, commercial, or private uses."
+
 # Meta description for your site.  This will help the search engines to find your site.
 description: Portfolio and personal blog of Noritaka IZUMI.
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
 customMenus:
-  - name: Policy
-    url: /posts/about/
+  - name: Top
+    url: https://www.fairy-select.com/
   - name: Qiita
     url: https://qiita.com/noritakaIzumi
   - name: Note
     url: https://note.com/noritakaizumi
+  - name: Policy
+    url: /posts/about/
+
+# Specify OpenGraph Headers
+openGraph:
+  title: Fairy Select
+  type: website
+  description: Portfolio and personal blog of Noritaka IZUMI.
+  image: images/author/man.png
+  # url: https://hugo-toha.github.io
