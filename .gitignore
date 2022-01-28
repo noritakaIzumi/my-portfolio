@@ -4,6 +4,7 @@
 # Compiled files.
 /public
 /resources
+/.hugo_build.lock
 
 # Posts.
 /content
