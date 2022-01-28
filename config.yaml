@@ -51,6 +51,7 @@ params:
 
   # GitHub repo of your site
   gitRepo: https://gitlab.com/noritakaIzumi/my-portfolio-posts
+  gitForge: gitlab
   # Default branch of your Git repo
   gitBranch: master
 
