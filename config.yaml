@@ -62,6 +62,18 @@ params:
     # Enable and configure blog posts
     blog:
       enable: false
+      # Share post on different social media
+      shareButtons:
+        facebook: true
+        twitter: true
+        linkedin: true
+        reddit: false
+        whatsapp: false
+        email: false
+        tumblr: false
+        pocket: false
+        diaspora: false
+        mastodon: false
     # Enable & configure "Notes" features
     notes:
       enable: false
