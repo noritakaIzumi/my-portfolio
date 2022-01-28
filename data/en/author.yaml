@@ -6,7 +6,7 @@ greeting: "Call me"
 image: "images/author/man.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "noritaka.izumi[at]gmail[dot]com"
+  email: "noritaka.izumi@gmail.com"
   # phone: "+0123456789"
 
 # some summary about what you do
