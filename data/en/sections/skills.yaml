@@ -11,11 +11,6 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: PHP
-  logo: "/images/sections/skills/php.png"
-  summary: "Using as the main language for development. Capable of teaching, developing a web app from scratch."
-  url: "https://www.php.net/"
-
 - name: Python
   logo: "/images/sections/skills/python.png"
   summary: "Capable of detailed design, coding. Experienced in using OSS tools to create standards of coding and security review."
@@ -26,6 +21,11 @@ skills:
   summary: "Know basic Go programming. Experienced in \"echo\" web framework, using Slack API via Go."
   url: "https://golang.org/"
 
+- name: jQuery
+  logo: "/images/sections/skills/jq.png"
+  summary: "Experienced in creating/modifying DOM elements, lazy loading via ajax."
+  url: "https://jquery.com/"
+
 - name: JavaScript
   logo: "/images/sections/skills/javascript.svg"
   summary: "Know getting/setting cookie, localStorage. Used for developing frontend."
@@ -33,7 +33,7 @@ skills:
 
 - name: Docker
   logo: "/images/sections/skills/docker.svg"
-  summary: "Dockerized several existing repositories in work."
+  summary: "Most always develop in Docker environment. Dockerized several existing repositories in work."
   url: "https://www.docker.com/"
 
 - name: AWS
@@ -55,6 +55,11 @@ skills:
   logo: "/images/sections/skills/git.png"
   summary: "Experienced with git-based development. Have experience in working with Bitbucket, AWS CodeCommit, GitLab, etc."
   url: "https://git-scm.com/"
+
+- name: PHP
+  logo: "/images/sections/skills/php.png"
+  summary: "Using as the main language for development. Capable of teaching, developing a web app from scratch."
+  url: "https://www.php.net/"
 
 - name: Software Testing
   summary: "Experienced with executing and creating test cases in integration testing. Also, experienced in educating, managing schedules for others."
