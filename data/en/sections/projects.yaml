@@ -17,23 +17,23 @@ buttons:
 
 # your projects
 projects:
-  - name: Chikku Takku
-    logo: /images/sections/projects/chikku-takku.png
+  - name: nowplenz なうぷれんず
+    logo: /images/sections/projects/radio.png
     role: Owner
-    timeline: "Jun 2021 - Present"
-    repo: https://github.com/noritakaIzumi/clock_app
+    timeline: "Jan 2022 - Present"
+    repo: https://github.com/noritakaIzumi/nowplenz#create-source-files
     # url: ""
-    summary: A desktop widget of clock.
-    tags: ["hobby", "electron"]
+    summary: Post nowplaying in your favourite radio stations to Slack.
+    tags: ["radio", "Slack", "Python", "Lambda"]
 
-  - name: Coding drills
-    logo: /images/sections/projects/study_night_girl.png
+  - name: Flash Anzan (mental arithmetic)
+    logo: /images/sections/projects/flash_anzan.png
     role: Owner
-    timeline: "Dec 2020 - Dec 2020"
-    repo: https://github.com/noritakaIzumi/coding-drills
+    timeline: "May 2020 - Present"
+    repo: https://github.com/noritakaIzumi/flash_anzan_web
     # url: ""
-    summary: A mock app of [Repl.it](https://repl.it/) . Write codes on your browser and run them.
-    tags: ["hobby", "python", "api"]
+    summary: Sum the flashing numbers on the display. **[Play Now](https://technical-study.gitlab.io/flash_anzan_web/)**
+    tags: ["hobby", "javascript", "anzan", "electron"]
 
   - name: Toha
     logo: /images/sections/projects/toha.png
@@ -44,15 +44,6 @@ projects:
     summary: A Hugo theme for personal portfolio.
     tags: ["hobby", "oss", "hugo", "theme"]
 
-  - name: Flash Anzan (mental arithmetic)
-    logo: /images/sections/projects/flash.png
-    role: Owner
-    timeline: "May 2020 - Present"
-    repo: https://github.com/noritakaIzumi/flash_anzan_web
-    # url: ""
-    summary: Sum the blinking numbers on the display.
-    tags: ["hobby", "javascript", "anzan", "electron"]
-
   - name: Word Games by Golang
     logo: /images/sections/projects/anki_card.png
     role: Owner
@@ -62,11 +53,29 @@ projects:
     summary: Studying Go and linked list.
     tags: ["hobby", "go", "linkedList"]
 
-  - name: Automated stamping system of TeamSpirit
+  - name: Chikku Takku
+    logo: /images/sections/projects/chikku-takku.png
+    role: Owner
+    timeline: "Jun 2021 - Jun 2021"
+    repo: https://github.com/noritakaIzumi/clock_app
+    # url: ""
+    summary: A desktop widget of clock.
+    tags: ["hobby", "electron"]
+
+  - name: Automated clocking system of TeamSpirit
     # logo:
     role: Owner
     timeline: "Feb 2019 - Apr 2019"
     repo: https://github.com/noritakaIzumi/autologin_salesforce
     #url: ""
-    summary: Selenium automatically opens browser, fills in username and password, and presses stamping button.
+    summary: Selenium automatically opens browser, fills in username and password, and presses clocking button.
     tags: ["hobby", "ruby", "selenium"]
+
+  - name: Coding drills
+    logo: /images/sections/projects/study_night_girl.png
+    role: Owner
+    timeline: "Dec 2020 - Dec 2020"
+    repo: https://github.com/noritakaIzumi/coding-drills
+    # url: ""
+    summary: A mock app of [Repl.it](https://repl.it/) . Write codes on your browser and run them.
+    tags: ["hobby", "python", "api"]

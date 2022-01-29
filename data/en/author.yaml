@@ -8,6 +8,8 @@ image: "images/author/man.png"
 contactInfo:
   email: "noritaka.izumi@gmail.com"
   # phone: "+0123456789"
+  github: noritakaIzumi
+  linkedin: noritaka-i-266aa567
 
 # some summary about what you do
 summary:
