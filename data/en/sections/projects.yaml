@@ -14,17 +14,28 @@ buttons:
     filter: "all"
   - name: OSS
     filter: "oss"
+  - name: Python
+    filter: "python"
 
 # your projects
 projects:
+  - name: Exercism (Python)
+    logo: /images/sections/projects/exercism-face-gradient.png
+    role: Contributor
+    timeline: "Feb 2022 - Present"
+    repo: https://github.com/exercism/python
+    # url: ""
+    summary: Exercism exercises in Python.<br>https://exercism.org/tracks/python
+    tags: ["oss", "python"]
+
   - name: nowplenz なうぷれんず
     logo: /images/sections/projects/radio.png
     role: Owner
     timeline: "Jan 2022 - Present"
-    repo: https://github.com/noritakaIzumi/nowplenz#create-source-files
+    repo: https://github.com/noritakaIzumi/nowplenz
     # url: ""
     summary: Post nowplaying in your favourite radio stations to Slack.
-    tags: ["radio", "Slack", "Python", "Lambda"]
+    tags: ["radio", "Slack", "python", "Lambda"]
 
   - name: Flash Anzan (mental arithmetic)
     logo: /images/sections/projects/flash_anzan.png
@@ -32,7 +43,7 @@ projects:
     timeline: "May 2020 - Present"
     repo: https://github.com/noritakaIzumi/flash_anzan_web
     # url: ""
-    summary: Sum the flashing numbers on the display. **[Play Now](https://technical-study.gitlab.io/flash_anzan_web/)**
+    summary: Sum the flashing numbers on the display.<br>**[Play Now](https://technical-study.gitlab.io/flash_anzan_web/)**
     tags: ["hobby", "javascript", "anzan", "electron"]
 
   - name: Toha
