@@ -26,6 +26,11 @@ skills:
   summary: "Experienced in creating/modifying DOM elements, lazy loading via ajax."
   url: "https://jquery.com/"
 
+- name: TypeScript
+  logo: "/images/sections/skills/typescript.svg"
+  summary: "Experienced in creating app using React and Express.js."
+  url: "https://www.typescriptlang.org/"
+
 - name: JavaScript
   logo: "/images/sections/skills/javascript.svg"
   summary: "Know getting/setting cookie, localStorage. Used for developing frontend."
