@@ -28,6 +28,7 @@ experiences:
     - Learn infrastructure via AWS, Terraform.
     - Write lots of product codes such as [J SPORTS](https://www.jsports.co.jp/), [TD CORE](http://td-coa.com/), [URAWA REDS](https://www.urawa-reds.co.jp/).
     - Educate programming for new employees.
+    - Automate unit testing with PHPUnit. Build CI pipelines via GitHub Actions and AWS CodeCommit.
 
 - company:
     name: YRGLM Inc.
