@@ -9,14 +9,21 @@ variables:
 
 test:
   script:
+    # https://gitlab.alpinelinux.org/alpine/aports/-/issues/14043
+    - apk add -X https://dl-cdn.alpinelinux.org/alpine/v3.16/main -u alpine-keys --allow-untrusted
+    - "apk update \
+    && apk --no-cache add git"
+    - "command -v git || exit 1"
     - hugo --gc --ignoreCache --verbose
   except:
     - master
 
 pages:
   script:
+    - apk add -X https://dl-cdn.alpinelinux.org/alpine/v3.16/main -u alpine-keys --allow-untrusted
     - "apk update \
     && apk --no-cache add git"
+    - "command -v git || exit 1"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git \
     && rm -rf my-portfolio-posts/.git \
     && mv my-portfolio-posts content"
