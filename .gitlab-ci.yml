@@ -9,6 +9,9 @@ variables:
 
 test:
   script:
+    - apk add -X https://dl-cdn.alpinelinux.org/alpine/v3.16/main -u alpine-keys
+    - "apk update \
+    && apk --no-cache add git"
     - hugo --gc --ignoreCache --verbose
   except:
     - master
