@@ -134,12 +134,9 @@ params:
   # Twitter cards.
   title: Fairy Select
   description: Portfolio and personal blog of Noritaka IZUMI.
-  images:
-    - "images/author/man.png"
+  image: "images/author/man.png"
+  twitterUser: "IzumiNoritaka"
 
   # Follow site title.
   subtitle: "My Portfolio"
   glue: " - "
-
-  # Share on Twitter
-  twitterUser: "@IzumiNoritaka"
