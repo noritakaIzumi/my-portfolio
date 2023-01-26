@@ -50,7 +50,7 @@ projects:
     # logo:
     role: Owner
     timeline: "Dec 2022 - Present"
-    repo: https://github.com/noritakaIzumi/my-first-framework
+    repo: https://github.com/noritakaIzumi/movabletypejp-env
     #url: ""
     summary: Development environment of [MovableType.jp](https://www.movabletype.jp/).
     tags: ["hobby", "movabletype"]
