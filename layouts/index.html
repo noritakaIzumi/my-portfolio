@@ -13,6 +13,7 @@
 
     <!-- import common headers -->
     {{- partial "header.html" . -}}
+    {{- partial "opengraph.html" . -}}
 
     <!-- import index page specific headers -->
     <link rel="stylesheet" href="{{ "/css/sections/home.css" | relURL }}"/>
@@ -73,12 +74,6 @@
 
     <!--- ADD COMMON SCRIPTS --------------->
     {{ partial "scripts.html" . }}
-
-    <!--- ADD INDEX PAGE SPECIFIC SCRIPTS -->
-    <script src="{{ "/js/itype.min.js" | relURL }}"></script>
-    <script src="{{ "/js/github-button.js" | relURL }}"></script>
-    <script src="{{ "/js/home.js" | relURL }}"></script>
-    <script src="{{ "/js/jquery.filterizr.min.js" | relURL }}"></script>
 
     <!------ ADD SUPPORT LINKS -------->
     {{- partial "misc/support.html" . -}}
