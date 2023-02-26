@@ -17,12 +17,6 @@ DefaultContentLanguage: en
 
 # Allow raw html in markdown file
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    codeFences: true
-    lineNos: true
   tableOfContents:
     startLevel: 2
     endLevel: 6
