@@ -89,6 +89,12 @@ params:
       #   repo: github.com/hugo-toha/hugo-toha.github.io
       #   issueTerm: title
       #   theme: github-light
+    support:
+      enable: true
+      services:
+        buymeacoffee:
+          user: fairyselect
+          text: よかったらジュースおごってください🥺
 
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
