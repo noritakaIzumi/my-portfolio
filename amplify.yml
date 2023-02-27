@@ -1,6 +1,13 @@
 version: 1
 frontend:
   phases:
+    preBuild:
+      commands:
+        - >
+          wget -q https://github.com/gohugoio/hugo/releases/download/v${VERSION_HUGO}/hugo_${VERSION_HUGO}_Linux-64bit.tar.gz && \
+               tar -zxf hugo_${VERSION_HUGO}_Linux-64bit.tar.gz hugo && \
+               mv hugo /usr/bin/hugo && \
+               rm -rf hugo_${VERSION_HUGO}_Linux-64bit.tar.gz
     build:
       commands:
         - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git"
