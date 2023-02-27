@@ -14,8 +14,6 @@ customMenus:
     url: https://www.fairy-select.com/
   - name: Qiita
     url: https://qiita.com/noritakaIzumi
-  - name: Note
-    url: https://note.com/noritakaizumi
   - name: Posts
     url: /posts/
   - name: Policy
