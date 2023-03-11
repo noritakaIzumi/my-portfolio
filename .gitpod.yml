@@ -1,0 +1,22 @@
+image:
+  # noinspection SpellCheckingInspection
+  file: .gitpod.Dockerfile
+
+# Ports to expose on workspace startup
+ports:
+  - port: 1313
+    onOpen: open-preview
+    name: Website
+    description: Website Preview
+
+tasks:
+  - name: Add Git config
+    command: test -n "${MY_GITCONFIG}" && base64 -d <(echo "${MY_GITCONFIG}") >> ~/.gitconfig || true
+  - name: Import GPG key
+    # https://adangel.org/2021/11/07/gitpod-gpg-signed-commits/
+    command: |
+      test -n "${MY_GNUPG}" && \
+      gpg --verbose --batch --import <(echo "${MY_GNUPG}"|base64 -d) && \
+      echo 'pinentry-mode loopback' >> ~/.gnupg/gpg.conf
+  - name: Run Hugo server
+    command: hugo server -wDF
