@@ -2,14 +2,12 @@
 ---
 # All available Hugo versions are listed here:
 # https://gitlab.com/pages/hugo/container_registry
-image: registry.gitlab.com/pages/hugo/hugo:0.92.1
+image: registry.gitlab.com/pages/hugo/hugo:0.109.0
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 before_script:
-  # https://gitlab.alpinelinux.org/alpine/aports/-/issues/14043
-  - apk add -X https://dl-cdn.alpinelinux.org/alpine/v3.16/main -u alpine-keys --allow-untrusted
   - apk update
   - apk --no-cache add git
   - "command -v git || exit 1"
@@ -17,10 +15,10 @@ before_script:
 hugo:
   stage: build
   script:
-    - "command -v git || exit 1"
-    - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git \
-    && rm -rf my-portfolio-posts/.git \
-    && mv my-portfolio-posts content"
+    - "git --version || exit 1"
+    - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
+    - "rm -rf my-portfolio-posts/.git || exit 1"
+    - "mv my-portfolio-posts content || exit 1"
     - hugo --gc --ignoreCache --verbose
   except:
     - master
@@ -28,10 +26,10 @@ hugo:
 pages:
   stage: build
   script:
-    - "command -v git || exit 1"
-    - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git \
-    && rm -rf my-portfolio-posts/.git \
-    && mv my-portfolio-posts content"
+    - "git --version || exit 1"
+    - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
+    - "rm -rf my-portfolio-posts/.git || exit 1"
+    - "mv my-portfolio-posts content || exit 1"
     - hugo --gc --ignoreCache
   artifacts:
     paths:
