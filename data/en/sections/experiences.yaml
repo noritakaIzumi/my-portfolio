@@ -11,6 +11,20 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: Trustbank, Inc.
+    url: "https://www.trustbank.co.jp/"
+    location: Tokyo
+    # company overview
+    overview: Trustbank Inc. is an IT company that plans and operates “Furusato Choice”, a comprehensive hometown tax payment website.
+  positions:
+  - designation: Software Engineer
+    start: Jun 2023
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: May 2023
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+
+- company:
     name: Unitea Inc.
     url: "https://www.unitea.jp/"
     location: Osaka Branch
@@ -20,7 +34,7 @@ experiences:
   - designation: Software Engineer
     start: Nov 2020
     # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
+    end: May 2023
     # give some points about what was your responsibilities at the company.
     responsibilities:
     - Create an app which posts now-on-air songs to Slack.

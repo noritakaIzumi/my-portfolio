@@ -21,15 +21,20 @@ skills:
   summary: "Know basic Go programming. Experienced in \"echo\" web framework, using Slack API via Go."
   url: "https://golang.org/"
 
+- name: TypeScript
+  logo: "/images/sections/skills/typescript.svg"
+  summary: "Experienced in creating app using React, Express.js, AWS Lambda."
+  url: "https://www.typescriptlang.org/"
+
+- name: AWS
+  logo: "/images/sections/skills/aws.jpg"
+  summary: "Used for several production workloads. Experienced with automating creating infrastructure, developing with AWS CDK/SAM."
+  url: "https://aws.amazon.com/"
+
 - name: jQuery
   logo: "/images/sections/skills/jq.png"
   summary: "Experienced in creating/modifying DOM elements, lazy loading via ajax."
   url: "https://jquery.com/"
-
-- name: TypeScript
-  logo: "/images/sections/skills/typescript.svg"
-  summary: "Experienced in creating app using React and Express.js."
-  url: "https://www.typescriptlang.org/"
 
 - name: JavaScript
   logo: "/images/sections/skills/javascript.svg"
@@ -40,11 +45,6 @@ skills:
   logo: "/images/sections/skills/docker.svg"
   summary: "Most always develop in Docker environment. Dockerized several existing repositories in work."
   url: "https://www.docker.com/"
-
-- name: AWS
-  logo: "/images/sections/skills/aws.jpg"
-  summary: "Used for creating test environment. Experienced with CloudFormation, RDS, Lambda, Route 53, etc."
-  url: "https://aws.amazon.com/"
 
 - name: Selenium
   logo: "/images/sections/skills/selenium.png"
