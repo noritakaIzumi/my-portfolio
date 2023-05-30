@@ -11,14 +11,14 @@ section:
 designation: Software Engineer
 # your company information
 company:
-  name: Unitea Inc.
-  url: "https://www.unitea.jp/"
+  name: Trustbank, Inc.
+  url: "https://www.trustbank.co.jp/"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am an vigorous software engineer with 3 years of working experience. I like to improve my company and teach others. I have too many hobbies (bowling, darts, billiards, ...), which is breaking my budget 😂'
+summary: 'I am an vigorous software engineer with several years of working experience. I have too many hobbies (bowling, darts, billiards, ...), which is breaking my budget 😂'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

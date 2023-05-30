@@ -11,7 +11,8 @@ frontend:
     build:
       commands:
         - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git"
-        - "mkdir -p ./content && cp -r ./my-portfolio-posts/posts ./content/posts"
+        - "rm -rf my-portfolio-posts/.git || exit 1"
+        - "mv my-portfolio-posts content || exit 1"
         - "hugo --gc --ignoreCache --baseURL https://$AWS_BRANCH.$AWS_APP_ID.amplifyapp.com/"
   artifacts:
     baseDirectory: public
