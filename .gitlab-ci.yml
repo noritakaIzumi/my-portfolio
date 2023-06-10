@@ -21,6 +21,8 @@ hugo:
     - "mv my-portfolio-posts content || exit 1"
     # https://github.com/gohugoio/hugo/issues/8025
     - hugo --verbose --minify --cleanDestinationDir --gc
+    # check there is no empty images
+    - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   except:
     - master
 
@@ -33,6 +35,8 @@ pages:
     - "mv my-portfolio-posts content || exit 1"
     # https://github.com/gohugoio/hugo/issues/8025
     - hugo --verbose --minify --cleanDestinationDir --gc
+    # check there is no empty images
+    - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   artifacts:
     paths:
       - public
