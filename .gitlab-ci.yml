@@ -2,7 +2,7 @@
 ---
 # All available Hugo versions are listed here:
 # https://gitlab.com/pages/hugo/container_registry
-image: registry.gitlab.com/pages/hugo/hugo:0.109.0
+image: registry.gitlab.com/pages/hugo/hugo:0.112.6
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -19,7 +19,10 @@ hugo:
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
     - "rm -rf my-portfolio-posts/.git || exit 1"
     - "mv my-portfolio-posts content || exit 1"
-    - hugo --gc --ignoreCache --verbose
+    # https://github.com/gohugoio/hugo/issues/8025
+    - hugo --verbose --minify --cleanDestinationDir --gc
+    # check there is no empty images
+    - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   except:
     - master
 
@@ -30,7 +33,10 @@ pages:
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
     - "rm -rf my-portfolio-posts/.git || exit 1"
     - "mv my-portfolio-posts content || exit 1"
-    - hugo --gc --ignoreCache
+    # https://github.com/gohugoio/hugo/issues/8025
+    - hugo --verbose --minify --cleanDestinationDir --gc
+    # check there is no empty images
+    - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   artifacts:
     paths:
       - public
