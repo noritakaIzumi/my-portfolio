@@ -90,11 +90,16 @@ params:
       #   issueTerm: title
       #   theme: github-light
     support:
-      enable: true
-      services:
-        buymeacoffee:
-          user: fairyselect
-          text: よかったらジュースおごってください🥺
+      enabled: true
+      buymeacoffee:
+        user: fairyselect
+        text: Support me on Buy me a coffee!
+        info: よかったらジュースおごってください🥺🍹
+        color: "#FF813F" # orange
+        # color: "#BD5FFF" # purple
+        # color: "#5F7FFF" # blue
+        # color: "#40DCA5" # green
+        # color: "#FF5F5F" # red
 
   # specify whether you want to show Table of Contents in reading page
   enableTOC: true
