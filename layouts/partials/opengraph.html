@@ -1,6 +1,13 @@
-<meta property="og:title" content="{{ .Title }}" />
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+{{ $title       :=  (index site.Data site.Language.Lang).site.openGraph.title | default site.Title }}
+{{ $type        :=  (index site.Data site.Language.Lang).site.openGraph.type | default "website" }}
+{{ $description :=  (index site.Data site.Language.Lang).site.openGraph.description | default  (index site.Data site.Language.Lang).site.description }}
+{{ $image       :=  (index site.Data site.Language.Lang).site.openGraph.image | default  (index site.Data site.Language.Lang).author.image }}
+{{ $url         :=  (index site.Data site.Language.Lang).site.openGraph.url | default site.BaseURL }}
+
+<!-- ============ open graph tags ========== -->
+<meta property="og:title" content="{{ $title }}"/>
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}{{ $description }}" />
 {{ $image := resources.Get $.Site.Params.image | resources.Fingerprint }}
-<meta name="og:image" content="{{ $image.Permalink }}">
+<meta property="og:image" content="{{ $image.Permalink }}">
+<meta property="og:url" content="{{ .Permalink }}" />
