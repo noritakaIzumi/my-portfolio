@@ -14,7 +14,7 @@ frontend:
         - "rm -rf my-portfolio-posts/.git || exit 1"
         - "mv my-portfolio-posts content || exit 1"
         # https://github.com/gohugoio/hugo/issues/8025
-        - "hugo --verbose --minify --cleanDestinationDir --gc --baseURL https://$AWS_BRANCH.$AWS_APP_ID.amplifyapp.com/"
+        - "hugo --verbose --minify --cleanDestinationDir --gc --baseURL https://$AWS_BRANCH.$AWS_APP_ID.amplifyapp.com/ --buildDrafts"
         # check there is no empty images
         - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   artifacts:
