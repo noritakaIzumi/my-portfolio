@@ -22,7 +22,7 @@ projects:
   - name: nowplenz なうぷれんず
     logo: /images/sections/projects/radio.png
     role: Owner
-    timeline: "Jan 2022 - Present"
+    timeline: "Jan 2022 - Aug 2023"
     repo: https://github.com/noritakaIzumi/nowplenz
     # url: ""
     summary: Post nowplaying in your favourite radio stations to Slack.
@@ -31,7 +31,7 @@ projects:
   - name: My First Framework
     # logo:
     role: Owner
-    timeline: "Aug 2022 - Present"
+    timeline: "Aug 2022 - Sep 2023"
     repo: https://github.com/noritakaIzumi/my-first-framework
     #url: ""
     summary: PHP web framework.
@@ -40,10 +40,10 @@ projects:
   - name: Flash Anzan (mental arithmetic)
     logo: /images/sections/projects/flash_anzan.png
     role: Owner
-    timeline: "May 2020 - Jun 2022"
+    timeline: "May 2020 - Present"
     repo: https://github.com/noritakaIzumi/flash_anzan_web
     # url: ""
-    summary: Sum the flashing numbers on the display.<br>**[Play Now](https://technical-study.gitlab.io/flash_anzan_web/)**
+    summary: Sum the flashing numbers on the display.
     tags: ["hobby", "javascript", "anzan", "electron"]
 
   - name: Movable Type JP Develop Environment
