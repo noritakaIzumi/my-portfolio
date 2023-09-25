@@ -15,7 +15,7 @@ experiences:
     url: "https://www.trustbank.co.jp/"
     location: Tokyo
     # company overview
-    overview: Trustbank Inc. is an IT company that plans and operates “Furusato Choice”, a comprehensive hometown tax payment website.
+    overview: Trustbank Inc. is an IT company that plans and operates "Furusato Choice", a comprehensive hometown tax payment website and "LoGo chat/LoGo form", a web form creation for local governments.
   positions:
   - designation: Software Engineer
     start: Jun 2023
@@ -23,6 +23,8 @@ experiences:
     # end: May 2023
     # give some points about what was your responsibilities at the company.
     responsibilities:
+      - Scrum development developer
+      - Introduce Python coding standards and automated checking by GitHub Actions
 
 - company:
     name: Unitea Inc.

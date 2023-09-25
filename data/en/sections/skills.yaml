@@ -16,20 +16,20 @@ skills:
   summary: "Capable of detailed design, coding. Experienced in using OSS tools to create standards of coding and security review."
   url: "https://www.python.org/"
 
-- name: Go
-  logo: "/images/sections/skills/go.png"
-  summary: "Know basic Go programming. Experienced in \"echo\" web framework, using Slack API via Go."
-  url: "https://golang.org/"
-
 - name: TypeScript
   logo: "/images/sections/skills/typescript.svg"
-  summary: "Experienced in creating app using React, Express.js, AWS Lambda."
+  summary: "Experienced in creating app using React, Express.js, AWS Lambda. And some frontend development in private...🥰"
   url: "https://www.typescriptlang.org/"
 
 - name: AWS
   logo: "/images/sections/skills/aws.jpg"
   summary: "Used for several production workloads. Experienced with automating creating infrastructure, developing with AWS CDK/SAM."
   url: "https://aws.amazon.com/"
+
+- name: Go
+  logo: "/images/sections/skills/go.png"
+  summary: "Know basic Go programming. Experienced in \"echo\" web framework, using Slack API via Go."
+  url: "https://golang.org/"
 
 - name: jQuery
   logo: "/images/sections/skills/jq.png"
@@ -45,6 +45,11 @@ skills:
   logo: "/images/sections/skills/docker.svg"
   summary: "Most always develop in Docker environment. Dockerized several existing repositories in work."
   url: "https://www.docker.com/"
+
+- name: Playwright
+  logo: "images/sections/skills/playwright.svg"
+  summary: "Experienced in creating end-to-end tests."
+  url: "https://playwright.dev/"
 
 - name: Selenium
   logo: "/images/sections/skills/selenium.png"
