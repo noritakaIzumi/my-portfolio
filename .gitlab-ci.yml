@@ -12,9 +12,14 @@ before_script:
   - apk --no-cache add git
   - "command -v git || exit 1"
 
+.npm_ci:
+  script:
+    - npm ci
+
 hugo:
   stage: build
   script:
+    - !reference [.npm_ci, script]
     - "git --version || exit 1"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
     - "rm -rf my-portfolio-posts/.git || exit 1"
@@ -29,6 +34,7 @@ hugo:
 pages:
   stage: build
   script:
+    - !reference [.npm_ci, script]
     - "git --version || exit 1"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
     - "rm -rf my-portfolio-posts/.git || exit 1"

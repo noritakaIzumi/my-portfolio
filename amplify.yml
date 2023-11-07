@@ -10,6 +10,7 @@ frontend:
                rm -rf hugo_${VERSION_HUGO}_Linux-64bit.tar.gz
     build:
       commands:
+        - npm ci
         - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git"
         - "rm -rf my-portfolio-posts/.git || exit 1"
         - "mv my-portfolio-posts content || exit 1"
