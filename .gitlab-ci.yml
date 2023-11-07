@@ -17,18 +17,29 @@ before_script:
     - apk add nodejs npm
     - npm ci
 
-hugo:
-  stage: build
+.fetch_posts:
   script:
-    - !reference [.npm_ci, script]
     - "git --version || exit 1"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
     - "rm -rf my-portfolio-posts/.git || exit 1"
     - "mv my-portfolio-posts content || exit 1"
+
+.hugo_build:
+  script:
     # https://github.com/gohugoio/hugo/issues/8025
     - hugo --verbose --minify --cleanDestinationDir --gc
+  after_script:
     # check there is no empty images
     - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
+
+hugo:
+  stage: build
+  script:
+    - !reference [.npm_ci, script]
+    - !reference [.fetch_posts, script]
+    - !reference [.hugo_build, script]
+  after_script:
+    - !reference [.hugo_build, after_script]
   except:
     - master
 
@@ -36,14 +47,10 @@ pages:
   stage: build
   script:
     - !reference [.npm_ci, script]
-    - "git --version || exit 1"
-    - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
-    - "rm -rf my-portfolio-posts/.git || exit 1"
-    - "mv my-portfolio-posts content || exit 1"
-    # https://github.com/gohugoio/hugo/issues/8025
-    - hugo --verbose --minify --cleanDestinationDir --gc
-    # check there is no empty images
-    - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
+    - !reference [.fetch_posts, script]
+    - !reference [.hugo_build, script]
+  after_script:
+    - !reference [.hugo_build, after_script]
   artifacts:
     paths:
       - public
