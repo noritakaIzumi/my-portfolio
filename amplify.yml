@@ -6,11 +6,11 @@ frontend:
   phases:
     preBuild:
       commands:
-        - >
+        - |
           wget -q https://github.com/gohugoio/hugo/releases/download/v${VERSION_HUGO_EXTENDED}/hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz && \
-               tar -zxf hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz hugo && \
-               mv hugo /usr/bin/hugo && \
-               rm -rf hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz
+            tar -zxf hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz hugo && \
+            mv hugo /usr/bin/hugo && \
+            rm -rf hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz
     build:
       commands:
         - npm ci
@@ -18,10 +18,10 @@ frontend:
         - "rm -rf my-portfolio-posts/.git || exit 1"
         - "mv my-portfolio-posts content || exit 1"
         # https://github.com/gohugoio/hugo/issues/8025
-        - >
+        - |
           env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_REPOID=$GISCUS_REPOID \
-          env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
-          hugo --verbose --minify --cleanDestinationDir --gc --baseURL https://$AWS_BRANCH.$AWS_APP_ID.amplifyapp.com/ --buildDrafts
+            env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
+            hugo --verbose --minify --cleanDestinationDir --gc --baseURL https://$AWS_BRANCH.$AWS_APP_ID.amplifyapp.com/ --buildDrafts
         # check there is no empty images
         - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   artifacts:
