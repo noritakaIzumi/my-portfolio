@@ -2,7 +2,7 @@
 ---
 # All available Hugo versions are listed here:
 # https://gitlab.com/pages/hugo/container_registry
-image: registry.gitlab.com/pages/hugo/hugo_extended:0.120.3
+image: registry.gitlab.com/pages/hugo/hugo:0.112.6
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -12,45 +12,31 @@ before_script:
   - apk --no-cache add git
   - "command -v git || exit 1"
 
-.npm_ci:
-  script:
-    - apk add nodejs npm
-    - npm ci
-
-.fetch_posts:
+hugo:
+  stage: build
   script:
     - "git --version || exit 1"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
     - "rm -rf my-portfolio-posts/.git || exit 1"
     - "mv my-portfolio-posts content || exit 1"
-
-.hugo_build:
-  script:
     # https://github.com/gohugoio/hugo/issues/8025
     - hugo --verbose --minify --cleanDestinationDir --gc
-  after_script:
     # check there is no empty images
     - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
-
-hugo:
-  stage: build
-  script:
-    - !reference [.npm_ci, script]
-    - !reference [.fetch_posts, script]
-    - !reference [.hugo_build, script]
-  after_script:
-    - !reference [.hugo_build, after_script]
   except:
     - master
 
 pages:
   stage: build
   script:
-    - !reference [.npm_ci, script]
-    - !reference [.fetch_posts, script]
-    - !reference [.hugo_build, script]
-  after_script:
-    - !reference [.hugo_build, after_script]
+    - "git --version || exit 1"
+    - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
+    - "rm -rf my-portfolio-posts/.git || exit 1"
+    - "mv my-portfolio-posts content || exit 1"
+    # https://github.com/gohugoio/hugo/issues/8025
+    - hugo --verbose --minify --cleanDestinationDir --gc
+    # check there is no empty images
+    - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   artifacts:
     paths:
       - public
