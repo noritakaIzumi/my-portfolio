@@ -10,3 +10,6 @@
 /content
 /static/images/posts
 !.gitkeep
+
+# npm packages
+/node_modules
