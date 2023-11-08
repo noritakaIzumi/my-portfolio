@@ -11,3 +11,5 @@
 {{ $image := resources.Get $.Site.Params.image | resources.Fingerprint }}
 <meta property="og:image" content="{{ $image.Permalink }}">
 <meta property="og:url" content="{{ .Permalink }}" />
+
+{{ template "_internal/twitter_cards.html" . }}
