@@ -27,7 +27,10 @@ before_script:
 .hugo_build:
   script:
     # https://github.com/gohugoio/hugo/issues/8025
-    - hugo --verbose --minify --cleanDestinationDir --gc
+    - >
+      env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_REPOID=$GISCUS_REPOID \
+      env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
+      hugo --verbose --minify --cleanDestinationDir --gc
   after_script:
     # check there is no empty images
     - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
