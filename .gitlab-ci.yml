@@ -29,6 +29,7 @@ before_script:
     # https://github.com/gohugoio/hugo/issues/8025
     - |
       env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_REPOID=$GISCUS_REPOID \
+        env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORY=$GISCUS_CATEGORY \
         env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
         hugo --verbose --minify --cleanDestinationDir --gc
   after_script:

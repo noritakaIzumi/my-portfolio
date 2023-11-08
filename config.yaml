@@ -112,7 +112,7 @@ params:
         #   issueTerm: title
         #   theme: github-light
         giscus:
-          # repoID and categoryID is set from secrets
+          # repoID, category, categoryID is set from secrets
           repo: noritakaIzumi/my-portfolio
           # repoID: your-repo-id
           # category: your-category
