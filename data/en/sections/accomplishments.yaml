@@ -11,16 +11,15 @@ section:
 
 # Your accomplishments
 accomplishments:
-- name: Test-Driven Development
-  timeline: "Aug 2021 - Present"
-  organization:
-    name: Exercism
-    url: https://exercism.org/
-  courseOverview: "The courses in Exercism provides exercises and a check system via unit test. We can not only improve programming skills but see unit testing frameworks of programming languages and a little experience of test-driven development."
-  certificateURL: "https://exercism.org/profiles/noritakaIzumi"
+  - name: Certified Scrum Developer®
+    timeline: "Dec 2023 - Present"
+    organization:
+      name: ScrumAlliance
+      url: https://www.scrumalliance.org/
+    courseOverview: The Certified Scrum Developer® course is designed for product developers who are working in a Scrum environment. This course helps to understand Scrum and agile pricinciples and strengthen technical skills in agile product development.
+    certificateURL: "/files/csd_certificate_20231216.pdf"
 
 # 書き方参考のためにコメントで残しておく
-
 #- name: Linux Foundation System Administrator
 #  timeline: "March 2018 - March 2019"
 #  organization:
@@ -52,3 +51,11 @@ accomplishments:
 #    url: https://www.udemy.com
 #  courseOverview: Discover how to create responsive and high performance software. Develop programs with Golang that are highly Concurrent and Parallel. Improve your programming skills in Go with more advanced, mulithreading topics.
 #  certificateURL: "https://example.com"
+
+  - name: Test-Driven Development
+    timeline: "Aug 2021 - Present"
+    organization:
+      name: Exercism
+      url: https://exercism.org/
+    courseOverview: "The courses in Exercism provides exercises and a check system via unit test. We can not only improve programming skills but see unit testing frameworks of programming languages and a little experience of test-driven development."
+    certificateURL: "https://exercism.org/profiles/noritakaIzumi"

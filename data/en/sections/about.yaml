@@ -47,6 +47,40 @@ socialLinks:
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
 badges:
+  - type: soft-skill-indicator
+    name: Creativity
+    percentage: 95
+    color: blue
+
+  - type: soft-skill-indicator
+    name: Teamwork
+    percentage: 80
+    color: yellow
+
+  - type: soft-skill-indicator
+    name: Flexibility
+    percentage: 85
+    color: pink
+
+  - type: soft-skill-indicator
+    name: Self-motivated
+    percentage: 100
+    color: green
+
+  - type: soft-skill-indicator
+    name: Confidence
+    percentage: 80
+    color: sky
+
+  - type: soft-skill-indicator
+    name: Honest
+    percentage: 85
+    color: orange
+
+  - type: certification
+    name: Certified Scrum Developer®
+    url: https://www.scrumalliance.org/get-certified/developer-track/certified-scrum-developer
+    badge: /images/seal-csd.png
 #- type: certification
 #  name: Certified Kubernetes Security Specialist
 #  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
@@ -61,33 +95,3 @@ badges:
 #  name: Artificial Intelligence and Machine Learning
 #  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
 #  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
-
-- type: soft-skill-indicator
-  name: Creativity
-  percentage: 95
-  color: blue
-
-- type: soft-skill-indicator
-  name: Teamwork
-  percentage: 80
-  color: yellow
-
-- type: soft-skill-indicator
-  name: Flexibility
-  percentage: 85
-  color: pink
-
-- type: soft-skill-indicator
-  name: Self-motivated
-  percentage: 100
-  color: green
-
-- type: soft-skill-indicator
-  name: Confidence
-  percentage: 80
-  color: sky
-
-- type: soft-skill-indicator
-  name: Honest
-  percentage: 85
-  color: orange
