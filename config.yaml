@@ -129,11 +129,11 @@ params:
         #   hideDeleted: false
 
     analytics:
-      enabled: true
+      enabled: false
       services:
-        # Google Analytics
-        google:
-          id: G-TCH9X4GKPZ
+        # # Google Analytics
+        # google:
+        #   id: G-TCH9X4GKPZ
         # # CounterDev
         # counterDev:
         #   id: <your counterdev id>
@@ -275,3 +275,8 @@ params:
   # Follow site title.
   subtitle: "My Portfolio"
   glue: " - "
+
+# FIXME: HUGO defaults
+services:
+  googleAnalytics:
+    ID: G-TCH9X4GKPZ
