@@ -81,6 +81,12 @@ badges:
     name: Certified Scrum Developer®
     url: https://www.scrumalliance.org/get-certified/developer-track/certified-scrum-developer
     badge: /images/seal-csd.png
+
+  - type: certification
+    name: PCAP™ – Certified Associate Python Programmer
+    url: https://pythoninstitute.org/pcap
+    badge: /images/pcap.png
+
 #- type: certification
 #  name: Certified Kubernetes Security Specialist
 #  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"

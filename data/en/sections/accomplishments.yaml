@@ -11,6 +11,14 @@ section:
 
 # Your accomplishments
 accomplishments:
+  - name: PCAP™ – Certified Associate Python Programmer
+    timeline: "Jan 2024 - Present"
+    organization:
+      name: Python Institute
+      url: https://pythoninstitute.org/
+    courseOverview: The PCAP certification focuses on the Object-oriented programming approach to Python. https://pythoninstitute.org/pcap
+    certificateURL: "/files/pcap_certificate.pdf"
+
   - name: Certified Scrum Developer®
     timeline: "Dec 2023 - Present"
     organization:
