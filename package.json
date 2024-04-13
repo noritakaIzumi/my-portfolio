@@ -34,6 +34,8 @@
   "devDependencies": {
     "@fontsource/mulish": "4.5.13",
     "@fortawesome/fontawesome-free": "^6.2.0",
+    "@playwright/test": "^1.43.1",
+    "@types/node": "^20.12.7",
     "autoprefixer": "^10.4.13",
     "bootstrap": "^4.6.2",
     "eslint": "^8.31.0",
@@ -64,5 +66,9 @@
   "volta": {
     "node": "18.20.2",
     "npm": "10.5.2"
+  },
+  "scripts": {
+    "start": "hugo server -wDF",
+    "test": "npx playwright test"
   }
 }
