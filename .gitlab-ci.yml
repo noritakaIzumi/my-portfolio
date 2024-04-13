@@ -9,8 +9,9 @@ variables:
 
 before_script:
   - apk update
-  - apk --no-cache add git
+  - apk --no-cache add git go
   - "command -v git || exit 1"
+  - "go version || exit 1"
 
 .npm_ci:
   script:
