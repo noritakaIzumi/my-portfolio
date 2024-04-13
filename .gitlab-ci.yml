@@ -49,6 +49,8 @@ hugo:
     - !reference [.hugo_build, after_script]
   artifacts:
     untracked: true
+    paths:
+      - public
   except:
     - master
 
@@ -70,6 +72,8 @@ pages:
 e2e:
   stage: test
   image: debian:bookworm-slim
+  dependencies:
+    - public
   before_script:
     - apt update && apt install -y curl
     - curl https://get.volta.sh | bash
