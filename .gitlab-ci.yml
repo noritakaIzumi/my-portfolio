@@ -45,6 +45,8 @@ hugo:
     - !reference [.hugo_build, script]
   after_script:
     - !reference [.hugo_build, after_script]
+  artifacts:
+    untracked: true
   except:
     - master
 
@@ -65,12 +67,11 @@ pages:
 e2e:
   stage: test
   before_script:
-    - npm -v
-    - node -v
-    - npx -v
+    - !reference [.npm_ci, script]
+    - npm install -g http-server
     - npx playwright install --with-deps
   script:
-    - npm run test -- --reporter junit
+    - npm run test
   artifacts:
     when: always
     paths:
