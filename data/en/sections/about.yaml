@@ -15,7 +15,9 @@ company:
   url: "https://www.trustbank.co.jp/"
 
 # your resume. this file path should be relative to you "static" directory
-resume: "files/resume.pdf"
+resourceLinks:
+  - title: My resume
+    url: "files/resume.pdf"
 
 # a summary about you
 summary: 'I am an vigorous software engineer with several years of working experience. I have too many hobbies (bowling, darts, billiards, ...), which is breaking my budget 😂'
@@ -80,12 +82,12 @@ badges:
   - type: certification
     name: Certified Scrum Developer®
     url: https://www.scrumalliance.org/get-certified/developer-track/certified-scrum-developer
-    badge: /images/seal-csd.png
+    badge: https://www.scrumalliance.org/images/default-source/badges/sa_badge_csd.png
 
   - type: certification
     name: PCAP™ – Certified Associate Python Programmer
     url: https://pythoninstitute.org/pcap
-    badge: /images/pcap.png
+    badge: https://images.credly.com/size/340x340/images/4e248e82-9e87-4a63-9263-250fafe5fb1f/image.png
 
 #- type: certification
 #  name: Certified Kubernetes Security Specialist

@@ -6,6 +6,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - yum install -y golang
         - |
           wget -q https://github.com/gohugoio/hugo/releases/download/v${VERSION_HUGO_EXTENDED}/hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz && \
             tar -zxf hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz hugo && \
@@ -22,7 +23,7 @@ frontend:
           env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_REPOID=$GISCUS_REPOID \
             env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORY=$GISCUS_CATEGORY \
             env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
-            hugo --verbose --minify --cleanDestinationDir --gc --baseURL https://$AWS_BRANCH.$AWS_APP_ID.amplifyapp.com/ --buildDrafts
+            hugo --logLevel info --minify --cleanDestinationDir --gc --baseURL https://$AWS_BRANCH.$AWS_APP_ID.amplifyapp.com/ --buildDrafts
         # check there is no empty images
         - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   artifacts:

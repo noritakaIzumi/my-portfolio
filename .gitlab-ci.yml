@@ -9,8 +9,9 @@ variables:
 
 before_script:
   - apk update
-  - apk --no-cache add git
+  - apk --no-cache add git go
   - "command -v git || exit 1"
+  - "go version || exit 1"
 
 .npm_ci:
   script:
@@ -31,7 +32,7 @@ before_script:
       env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_REPOID=$GISCUS_REPOID \
         env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORY=$GISCUS_CATEGORY \
         env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
-        hugo --verbose --minify --cleanDestinationDir --gc
+        hugo --logLevel info --minify --cleanDestinationDir --gc
   after_script:
     # check there is no empty images
     - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
