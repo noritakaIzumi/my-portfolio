@@ -73,7 +73,7 @@ e2e:
   stage: test
   image: debian:bookworm-slim
   dependencies:
-    - public
+    - hugo
   before_script:
     - apt update && apt install -y curl
     - curl https://get.volta.sh | bash
