@@ -7,11 +7,12 @@ image: registry.gitlab.com/pages/hugo/hugo_extended:0.120.3
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-before_script:
-  - apk update
-  - apk --no-cache add git go
-  - "command -v git || exit 1"
-  - "go version || exit 1"
+.install_dependencies:
+  script:
+    - apk update
+    - apk --no-cache add git go
+    - "command -v git || exit 1"
+    - "go version || exit 1"
 
 .npm_ci:
   script:
@@ -40,6 +41,7 @@ before_script:
 hugo:
   stage: build
   script:
+    - !reference [.install_dependencies, script]
     - !reference [.npm_ci, script]
     - !reference [.fetch_posts, script]
     - !reference [.hugo_build, script]
@@ -53,6 +55,7 @@ hugo:
 pages:
   stage: build
   script:
+    - !reference [.install_dependencies, script]
     - !reference [.npm_ci, script]
     - !reference [.fetch_posts, script]
     - !reference [.hugo_build, script]
@@ -67,6 +70,7 @@ pages:
 e2e:
   stage: test
   before_script:
+    - !reference [.install_dependencies, script]
     - !reference [.npm_ci, script]
     - npm install -g http-server
     - npx playwright install --with-deps
