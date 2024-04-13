@@ -61,3 +61,17 @@ pages:
       - public
   only:
     - master
+
+e2e:
+  stage: test
+  before_script:
+    - npx playwright install --with-deps
+  script:
+    - npm run test -- --reporter junit
+  artifacts:
+    when: always
+    paths:
+      - ./test-results/e2e-test-results.xml
+    reports:
+      junit:
+        - ./test-results/e2e-test-results.xml
