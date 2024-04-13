@@ -6,6 +6,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - apt install -y golang-go
         - |
           wget -q https://github.com/gohugoio/hugo/releases/download/v${VERSION_HUGO_EXTENDED}/hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz && \
             tar -zxf hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz hugo && \
