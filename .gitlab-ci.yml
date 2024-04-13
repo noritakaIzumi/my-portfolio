@@ -65,6 +65,9 @@ pages:
 e2e:
   stage: test
   before_script:
+    - npm -v
+    - node -v
+    - npx -v
     - npx playwright install --with-deps
   script:
     - npm run test -- --reporter junit
