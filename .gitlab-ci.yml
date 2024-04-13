@@ -69,9 +69,11 @@ pages:
 
 e2e:
   stage: test
+  image: debian:bookworm-slim
   before_script:
-    - !reference [.install_dependencies, script]
-    - !reference [.npm_ci, script]
+    - apt update && apt install -y curl
+    - curl https://get.volta.sh | bash
+    - . ~/.profile
     - npm install -g http-server
     - npx playwright install --with-deps
   script:
