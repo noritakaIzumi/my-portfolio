@@ -49,6 +49,8 @@ e2e:
     - test -z "$(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$')"
   artifacts:
     when: always
+    expose_as: "e2e test results"
+    expire_in: 7 days
     paths:
       - ./test-results/e2e-test-results.xml
     reports:
