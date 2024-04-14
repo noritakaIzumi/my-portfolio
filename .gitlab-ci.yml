@@ -1,27 +1,16 @@
 # This file is a template, and might need editing before it works on your project.
 ---
-# All available Hugo versions are listed here:
-# https://gitlab.com/pages/hugo/container_registry
-image: registry.gitlab.com/pages/hugo/hugo_extended:0.120.3
+image: registry.gitlab.com/noritakaizumi/my-portfolio/hugo
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-.install_dependencies:
-  script:
-    - apk update
-    - apk --no-cache add git go
-    - "command -v git || exit 1"
-    - "go version || exit 1"
-
 .npm_ci:
   script:
-    - apk add nodejs npm
     - npm ci
 
 .fetch_posts:
   script:
-    - "git --version || exit 1"
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
     - "rm -rf my-portfolio-posts/.git || exit 1"
     - "mv my-portfolio-posts content || exit 1"
@@ -38,7 +27,6 @@ variables:
 hugo:
   stage: build
   script:
-    - !reference [.install_dependencies, script]
     - !reference [.npm_ci, script]
     - !reference [.fetch_posts, script]
     - !reference [.hugo_build, script]
@@ -51,7 +39,6 @@ hugo:
 pages:
   stage: build
   script:
-    - !reference [.install_dependencies, script]
     - !reference [.npm_ci, script]
     - !reference [.fetch_posts, script]
     - !reference [.hugo_build, script]
