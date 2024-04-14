@@ -53,8 +53,8 @@ e2e:
     - . /root/.profile
   script:
     - npm run test
-    # check there is no empty images
-    - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
+    - test -z "$(find public/ -type d -name '.git')"
+    - test -z "$(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$')"
   artifacts:
     when: always
     paths:
