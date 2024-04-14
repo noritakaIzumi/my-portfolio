@@ -3,8 +3,7 @@ image: registry.gitlab.com/noritakaizumi/my-portfolio/hugo
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-# for GitLab Pages
-pages:
+hugo:
   stage: build
   before_script:
     - npm ci
@@ -21,20 +20,6 @@ pages:
   artifacts:
     paths:
       - public
-  only:
-    - master
-
-hugo:
-  stage: build
-  before_script:
-    - !reference [pages, before_script]
-  script:
-    - !reference [pages, script]
-  artifacts:
-    paths:
-      - public
-  except:
-    - master
 
 e2e:
   stage: test
@@ -56,3 +41,17 @@ e2e:
     reports:
       junit:
         - ./test-results/e2e-test-results.xml
+
+# for GitLab Pages
+pages:
+  stage: deploy
+  dependencies:
+    - hugo
+    - e2e
+  script:
+    - "true"
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
