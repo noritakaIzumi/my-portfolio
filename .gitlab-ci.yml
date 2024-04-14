@@ -5,18 +5,6 @@ image: registry.gitlab.com/noritakaizumi/my-portfolio/hugo
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-hugo:
-  stage: build
-  before_script:
-    - !reference [pages, before_script]
-  script:
-    - !reference [pages, script]
-  artifacts:
-    paths:
-      - public
-  except:
-    - master
-
 # for GitLab Pages
 pages:
   stage: build
@@ -36,6 +24,18 @@ pages:
     paths:
       - public
   only:
+    - master
+
+hugo:
+  stage: build
+  before_script:
+    - !reference [pages, before_script]
+  script:
+    - !reference [pages, script]
+  artifacts:
+    paths:
+      - public
+  except:
     - master
 
 e2e:
