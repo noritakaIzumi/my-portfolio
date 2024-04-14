@@ -21,17 +21,6 @@ hugo:
     paths:
       - public
 
-# for GitLab Pages
-pages:
-  stage: deploy
-  dependencies:
-    - hugo
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
-
 e2e:
   stage: test
   image: registry.gitlab.com/noritakaizumi/my-portfolio/e2e
@@ -52,3 +41,15 @@ e2e:
     reports:
       junit:
         - ./test-results/e2e-test-results.xml
+
+# for GitLab Pages
+pages:
+  stage: deploy
+  dependencies:
+    - hugo
+    - e2e
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
