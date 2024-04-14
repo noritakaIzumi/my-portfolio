@@ -5,7 +5,21 @@ image: registry.gitlab.com/noritakaizumi/my-portfolio/hugo
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-.hugo_build:
+hugo:
+  stage: build
+  before_script:
+    - !reference [pages, before_script]
+  script:
+    - !reference [pages, script]
+  artifacts:
+    paths:
+      - public
+  except:
+    - master
+
+# for GitLab Pages
+pages:
+  stage: build
   before_script:
     - npm ci
     - git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git
@@ -18,26 +32,6 @@ variables:
         env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORY=$GISCUS_CATEGORY \
         env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
         hugo --logLevel info --minify --cleanDestinationDir --gc
-
-hugo:
-  stage: build
-  before_script:
-    - !reference [.hugo_build, before_script]
-  script:
-    - !reference [.hugo_build, script]
-  artifacts:
-    paths:
-      - public
-  except:
-    - master
-
-# for GitLab Pages
-pages:
-  stage: build
-  before_script:
-    - !reference [.hugo_build, before_script]
-  script:
-    - !reference [.hugo_build, script]
   artifacts:
     paths:
       - public
