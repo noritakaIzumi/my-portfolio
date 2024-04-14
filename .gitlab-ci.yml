@@ -70,16 +70,9 @@ pages:
 
 e2e:
   stage: test
-  image: debian:bookworm-slim
+  image: registry.gitlab.com/noritakaizumi/my-portfolio/e2e
   dependencies:
     - hugo
-  before_script:
-    - apt update && apt install -y curl
-    - curl https://get.volta.sh | bash
-    - . ~/.profile
-    - npm install -g http-server
-    - npm ci
-    - npx playwright install --with-deps
   script:
     - npm run test
   artifacts:
