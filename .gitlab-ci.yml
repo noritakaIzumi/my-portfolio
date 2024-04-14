@@ -34,9 +34,6 @@ variables:
         env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORY=$GISCUS_CATEGORY \
         env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
         hugo --logLevel info --minify --cleanDestinationDir --gc
-  after_script:
-    # check there is no empty images
-    - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
 
 hugo:
   stage: build
@@ -45,8 +42,6 @@ hugo:
     - !reference [.npm_ci, script]
     - !reference [.fetch_posts, script]
     - !reference [.hugo_build, script]
-  after_script:
-    - !reference [.hugo_build, after_script]
   artifacts:
     paths:
       - public
@@ -60,8 +55,6 @@ pages:
     - !reference [.npm_ci, script]
     - !reference [.fetch_posts, script]
     - !reference [.hugo_build, script]
-  after_script:
-    - !reference [.hugo_build, after_script]
   artifacts:
     paths:
       - public
@@ -77,6 +70,8 @@ e2e:
     - . /root/.profile
   script:
     - npm run test
+    # check there is no empty images
+    - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   artifacts:
     when: always
     paths:
