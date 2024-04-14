@@ -48,7 +48,6 @@ hugo:
   after_script:
     - !reference [.hugo_build, after_script]
   artifacts:
-    untracked: true
     paths:
       - public
   except:
