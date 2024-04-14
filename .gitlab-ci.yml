@@ -5,17 +5,12 @@ image: registry.gitlab.com/noritakaizumi/my-portfolio/hugo
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-.npm_ci:
-  script:
+.hugo_build:
+  before_script:
     - npm ci
-
-.fetch_posts:
-  script:
     - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git || exit 1"
     - "rm -rf my-portfolio-posts/.git || exit 1"
     - "mv my-portfolio-posts content || exit 1"
-
-.hugo_build:
   script:
     # https://github.com/gohugoio/hugo/issues/8025
     - |
@@ -26,9 +21,9 @@ variables:
 
 hugo:
   stage: build
+  before_script:
+    - !reference [.hugo_build, before_script]
   script:
-    - !reference [.npm_ci, script]
-    - !reference [.fetch_posts, script]
     - !reference [.hugo_build, script]
   artifacts:
     paths:
@@ -39,9 +34,9 @@ hugo:
 # for GitLab Pages
 pages:
   stage: build
+  before_script:
+    - !reference [.hugo_build, before_script]
   script:
-    - !reference [.npm_ci, script]
-    - !reference [.fetch_posts, script]
     - !reference [.hugo_build, script]
   artifacts:
     paths:
