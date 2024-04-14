@@ -78,6 +78,7 @@ e2e:
     - curl https://get.volta.sh | bash
     - . ~/.profile
     - npm install -g http-server
+    - npm ci
     - npx playwright install --with-deps
   script:
     - npm run test
