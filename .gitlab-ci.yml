@@ -20,34 +20,12 @@ hugo:
   artifacts:
     paths:
       - public
-  except:
-    - master
-
-hugo_master:
-  stage: build
-  before_script:
-    - npm ci
-    - git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git
-    - rm -r my-portfolio-posts/.git
-    - mv my-portfolio-posts content
-  script:
-    # https://github.com/gohugoio/hugo/issues/8025
-    - |
-      env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_REPOID=$GISCUS_REPOID \
-        env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORY=$GISCUS_CATEGORY \
-        env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
-        hugo --logLevel info --minify --cleanDestinationDir --gc
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
 
 # for GitLab Pages
 pages:
   stage: deploy
   dependencies:
-    - hugo_master
+    - hugo
   artifacts:
     paths:
       - public
