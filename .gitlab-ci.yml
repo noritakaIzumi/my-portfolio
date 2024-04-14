@@ -73,6 +73,8 @@ e2e:
   image: registry.gitlab.com/noritakaizumi/my-portfolio/e2e
   dependencies:
     - hugo
+  before_script:
+    - . /root/.profile
   script:
     - npm run test
   artifacts:
