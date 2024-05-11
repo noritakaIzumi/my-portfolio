@@ -7,7 +7,7 @@ hugo:
   stage: build
   before_script:
     - npm ci
-    - git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git
+    - git clone https://gitlab.com/noritakaIzumi/my-portfolio-posts.git
     - rm -r my-portfolio-posts/.git
     - mv my-portfolio-posts content
   script:
