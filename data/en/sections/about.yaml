@@ -15,9 +15,9 @@ company:
   url: "https://www.trustbank.co.jp/"
 
 # your resume. this file path should be relative to you "static" directory
-resourceLinks:
-  - title: My resume
-    url: "files/resume.pdf"
+# resourceLinks:
+#   - title: My resume
+#     url: "files/resume.pdf"
 
 # a summary about you
 summary: 'I am an vigorous software engineer with several years of working experience. I have too many hobbies (bowling, darts, billiards, ...), which is breaking my budget 😂'
