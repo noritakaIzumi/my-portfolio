@@ -9,15 +9,29 @@ module:
   mounts:
     - source: static/files
       target: static/files
-    - source: ./node_modules/flag-icon-css/flags
+    - source: ./node_modules/flag-icons/flags
       target: static/flags
     - source: ./node_modules/@fontsource/mulish/files
       target: static/files
     - source: ./node_modules/katex/dist/fonts
       target: static/fonts
 
-# Force a locale to be use, really useful to develop the application ! Should be commented in production, the "weight" should rocks.
-DefaultContentLanguage: en
+# Manage languages
+# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
+#languages:
+#  en:
+#    languageCode: en
+#    languageName: English
+#    title: "John's Blog"
+#    weight: 1
+#  bn:
+#    languageCode: bn
+#    languageName: বাংলা
+#    title: "জনের ব্লগ"
+#    weight: 2
+
+# default language for the content
+defaultContentLanguage: en
 
 # Allow raw html in markdown file
 markup:
@@ -68,9 +82,19 @@ params:
   # Configure various features of this theme
   features:
 
-    # Enable dark theme
-    darkMode:
+    # [Deprecated] Enable dark theme
+    # This is a deprecated setting, but has not been removed to maintain backward compatibility
+    # If `theme` is set, the `darkMode` setting will be discarded.
+    # darkMode:
+    #   enable: true
+
+    # Configure theme color settings
+    theme:
       enable: true
+      services:
+        light: true # enable light theme. default "true"
+        dark: true # enable dark theme. default "true"
+        default: system # can be either light, dark or system. default "system"
 
     # Enable and configure portfolio
     portfolio:
@@ -79,6 +103,7 @@ params:
     # Enable and configure blog posts
     blog:
       enable: true
+      showAuthor: true
       # Share post on different social media
       shareButtons:
         facebook: true
@@ -131,10 +156,14 @@ params:
         #   autoInit: true
         #   hideDeleted: false
 
+    # Enable Analytics
     analytics:
       enabled: false
       services:
-        # # Google Analytics
+        # cloudflare web analytics
+        # cloudflare:
+        #   token: "<token>"
+        # Google Analytics
         # google:
         #   id: G-TCH9X4GKPZ
         # # CounterDev
@@ -147,7 +176,18 @@ params:
         # matomo:
         #   instance: matomo.example.com
         #   siteId: 1 # Or any other number
+        # # Umami
+        # umami:
+        #   scheme: https
+        #   instance: umami.example.com
+        #   id: <your umami site id>
+        # # Statcounter
+        # statcounter:
+        #   project: 1234567890
+        #   invisible: 1
+        #   security: deadbeef
 
+    # Enable Support
     support:
       enable: true
       services:
@@ -168,10 +208,11 @@ params:
     # Show tags under the post title
     tags:
       enable: true
+      on_card: true # enables tags in post cards
 
     # Specify whether to show flag in the language selector. Default is true.
     flags:
-      enable: false
+      enable: true
       # # If you want to use different country flag for a language, specify them here.
       # flagOverwrites:
       #   - languageCode: en
@@ -187,12 +228,12 @@ params:
       services:
         # Uncomment for `mermaid` shortcode.
         mermaid:
-        # For config options, see: https://mermaid-js.github.io/mermaid/#/Setup?id=configuration
-        # theme: dark
+          # For config options, see: https://mermaid-js.github.io/mermaid/#/Setup?id=configuration
+          # theme: dark
 
     # Enable this to create mathematic expressions using `$$` blocks
     math:
-      enable: false
+      enable: true
       services:
         # https://katex.org/docs/autorender.html#api for more configurations
         katex:
@@ -237,8 +278,17 @@ params:
         # Can play HTML5 Video, Audio, Youtube, Vimeo.
         # For more info on setup: https://github.com/sampotts/plyr#quick-setup
         plyr:
-        # options doc: https://github.com/sampotts/plyr#options
-        # fullscreen: true
+          # options doc: https://github.com/sampotts/plyr#options
+          # fullscreen: true
+
+    # Enables copy code button
+    copyCodeButton:
+      enable: true
+
+    # Enable reading time support in post cards and in post pages
+    readingTime:
+      enable: true
+
 
   # Provide footer configuration.
   footer:

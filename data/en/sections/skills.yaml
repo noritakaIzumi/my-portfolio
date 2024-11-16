@@ -5,8 +5,26 @@ section:
   enable: true
   weight: 2
   showOnNavbar: true
+  filter: true
   # Can optionally hide the title in sections
   # hideTitle: true
+
+# filter buttons
+buttons:
+  - name: All
+    filter: "all"
+  - name: Basic
+    filter: "basic"
+  - name: Language
+    filter: "language"
+#  - name: Container
+#    filter: "container"
+#  - name: Others
+#    filter: "others"
+  - name: Test
+    filter: "test"
+  - name: Infrastructure
+    filter: "infra"
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
@@ -14,67 +32,81 @@ skills:
 - name: Python
   logo: "/images/sections/skills/python.png"
   summary: "Capable of detailed design, coding. Experienced in using OSS tools to create standards of coding and security review."
+  categories: ["language"]
   url: "https://www.python.org/"
 
 - name: TypeScript
   logo: "/images/sections/skills/typescript.svg"
   summary: "Experienced in creating app using React, Express.js, AWS Lambda. And some frontend development in private...🥰"
+  categories: ["language"]
   url: "https://www.typescriptlang.org/"
 
 - name: AWS
   logo: "/images/sections/skills/aws.jpg"
   summary: "Used for several production workloads. Experienced with automating creating infrastructure, developing with AWS CDK/SAM."
+  categories: ["infra"]
   url: "https://aws.amazon.com/"
 
 - name: Go
   logo: "/images/sections/skills/go.png"
   summary: "Know basic Go programming. Experienced in \"echo\" web framework, using Slack API via Go."
+  categories: ["language"]
   url: "https://golang.org/"
 
 - name: jQuery
   logo: "/images/sections/skills/jq.png"
   summary: "Experienced in creating/modifying DOM elements, lazy loading via ajax."
+  categories: ["language"]
   url: "https://jquery.com/"
 
 - name: JavaScript
   logo: "/images/sections/skills/javascript.svg"
   summary: "Know getting/setting cookie, localStorage. Used for developing frontend."
+  categories: ["language"]
   url: "https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaScript"
 
 - name: Docker
   logo: "/images/sections/skills/docker.svg"
   summary: "Most always develop in Docker environment. Dockerized several existing repositories in work."
+  categories: ["infra"]
   url: "https://www.docker.com/"
 
 - name: Playwright
   logo: "images/sections/skills/playwright.svg"
   summary: "Experienced in creating end-to-end tests."
+  categories: ["test"]
   url: "https://playwright.dev/"
 
 - name: Selenium
   logo: "/images/sections/skills/selenium.png"
   summary: "Capable of writing scripts and tracking bugs. Used for the main framework of integration tests."
+  categories: ["test"]
   url: "https://www.selenium.dev/documentation/"
 
 - name: Linux
   logo: "/images/sections/skills/linux.png"
   summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+  categories: ["basic"]
   url: "https://en.wikipedia.org/wiki/Linux"
 
 - name: Git
   logo: "/images/sections/skills/git.png"
   summary: "Experienced with git-based development. Have experience in working with Bitbucket, AWS CodeCommit, GitLab, etc."
+  categories: ["basic"]
   url: "https://git-scm.com/"
 
 - name: PHP
   logo: "/images/sections/skills/php.png"
   summary: "Using as the main language for development. Capable of teaching, developing a web app from scratch."
+  categories: ["language"]
   url: "https://www.php.net/"
 
 - name: Software Testing
   summary: "Experienced with executing and creating test cases in integration testing. Also, experienced in educating, managing schedules for others."
+  categories: ["basic"]
   url: "https://en.wikipedia.org/wiki/Software_testing"
 
 - name: Database
   summary: "Know basic query such as CRUD, join tables, partition. Experienced with PostgreSQL, MySQL, Vertica, MongoDB."
+  categories: ["basic"]
   url: "https://en.wikipedia.org/wiki/Database"
