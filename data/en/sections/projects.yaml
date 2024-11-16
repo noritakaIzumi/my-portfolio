@@ -19,14 +19,14 @@ buttons:
 
 # your projects
 projects:
-  - name: nowplenz なうぷれんず
-    logo: /images/sections/projects/radio.png
+  - name: Chronovoyage
+    logo: /images/sections/projects/chronovoyage.png
     role: Owner
-    timeline: "Jan 2022 - Aug 2023"
-    repo: https://github.com/noritakaIzumi/nowplenz
+    timeline: "Sep 2024 - Present"
+    repo: https://github.com/fairy-select/chronovoyage
     # url: ""
-    summary: Post nowplaying in your favourite radio stations to Slack.
-    tags: ["radio", "Slack", "python", "Lambda"]
+    summary: Simple database migration framework.
+    tags: ["oss", "database", "migration"]
 
   - name: My First Framework
     # logo:
@@ -36,6 +36,24 @@ projects:
     #url: ""
     summary: PHP web framework.
     tags: ["hobby", "php", "framework"]
+
+  - name: nowplenz なうぷれんず
+    logo: /images/sections/projects/radio.png
+    role: Owner
+    timeline: "Jan 2022 - Aug 2023"
+    repo: https://github.com/noritakaIzumi/nowplenz
+    # url: ""
+    summary: Post nowplaying in your favourite radio stations to Slack.
+    tags: ["radio", "Slack", "python", "Lambda"]
+
+  - name: DefinitelyTyped
+    logo: /images/sections/projects/definitely-typed.png
+    role: Contributor
+    timeline: "Jan 2023 - Feb 2023"
+    repo: https://github.com/DefinitelyTyped/DefinitelyTyped
+    # url: ""
+    summary: The repository for high quality TypeScript type definitions.
+    tags: ["oss", "typescript"]
 
   - name: Flash Anzan (mental arithmetic)
     logo: /images/sections/projects/flash_anzan.png
