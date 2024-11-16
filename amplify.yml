@@ -1,7 +1,7 @@
 version: 1
 env:
   variables:
-    VERSION_HUGO_EXTENDED: 0.120.3
+    VERSION_HUGO_EXTENDED: 0.138.0
 frontend:
   phases:
     preBuild:
