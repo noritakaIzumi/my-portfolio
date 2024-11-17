@@ -22,5 +22,5 @@ openGraph:
   title: Fairy Select
   type: website
   description: Portfolio and personal blog of Noritaka IZUMI.
-  image: images/author/man.png
+  image: /images/og_image.png
   # url: https://hugo-toha.github.io

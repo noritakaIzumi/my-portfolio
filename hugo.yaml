@@ -15,6 +15,8 @@ module:
       target: static/files
     - source: ./node_modules/katex/dist/fonts
       target: static/fonts
+    - source: static/images
+      target: static/images
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
@@ -59,6 +61,10 @@ hasCJKLanguage: true
 
 # Site parameters
 params:
+  # og:image on Posts/Notes page
+  images:
+    - /images/og_image.png
+
   # Background image of the landing page
   background: /images/site/background.jpg
 
