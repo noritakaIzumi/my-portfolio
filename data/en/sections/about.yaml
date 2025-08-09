@@ -50,34 +50,19 @@ socialLinks:
 # currently supported colors: blue, yellow, pink, green, sky, orange
 badges:
   - type: soft-skill-indicator
-    name: Creativity
-    percentage: 95
-    color: blue
-
-  - type: soft-skill-indicator
-    name: Teamwork
-    percentage: 80
-    color: yellow
-
-  - type: soft-skill-indicator
-    name: Flexibility
-    percentage: 85
-    color: pink
-
-  - type: soft-skill-indicator
-    name: Self-motivated
-    percentage: 100
-    color: green
-
-  - type: soft-skill-indicator
-    name: Confidence
+    name: Reflection
     percentage: 80
     color: sky
 
   - type: soft-skill-indicator
-    name: Honest
-    percentage: 85
-    color: orange
+    name: Metaphor
+    percentage: 70
+    color: pink
+
+  - type: soft-skill-indicator
+    name: Self-motivated
+    percentage: 95
+    color: green
 
   - type: certification
     name: Associate Big Data Analyst (ABDA™)
