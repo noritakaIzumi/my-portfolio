@@ -50,44 +50,34 @@ socialLinks:
 # currently supported colors: blue, yellow, pink, green, sky, orange
 badges:
   - type: soft-skill-indicator
-    name: Creativity
-    percentage: 95
-    color: blue
-
-  - type: soft-skill-indicator
-    name: Teamwork
-    percentage: 80
-    color: yellow
-
-  - type: soft-skill-indicator
-    name: Flexibility
-    percentage: 85
-    color: pink
-
-  - type: soft-skill-indicator
-    name: Self-motivated
-    percentage: 100
-    color: green
-
-  - type: soft-skill-indicator
-    name: Confidence
+    name: Reflection
     percentage: 80
     color: sky
 
   - type: soft-skill-indicator
-    name: Honest
-    percentage: 85
-    color: orange
+    name: Metaphor
+    percentage: 70
+    color: pink
+
+  - type: soft-skill-indicator
+    name: Self-motivated
+    percentage: 95
+    color: green
 
   - type: certification
-    name: Certified Scrum Developer®
-    url: https://www.scrumalliance.org/get-certified/developer-track/certified-scrum-developer
-    badge: https://www.scrumalliance.org/images/badgelibraryprovider/default-album/sa-csd-600.png
+    name: Associate Big Data Analyst (ABDA™)
+    url: https://www.credbadge.com/credit/certified/9174956122/
+    badge: https://www.credbadge.com/Content/Images/logos/dasca/abda.png
 
   - type: certification
     name: PCAP™ – Certified Associate Python Programmer
-    url: https://pythoninstitute.org/pcap
+    url: https://www.credly.com/badges/73f007fe-3161-4bdb-9a9e-fc99f1e384ee/public_url
     badge: https://images.credly.com/size/340x340/images/4e248e82-9e87-4a63-9263-250fafe5fb1f/image.png
+
+  - type: certification
+    name: Certified Scrum Developer®
+    url: /files/csd_certificate_202340710.pdf
+    badge: https://www.scrumalliance.org/images/badgelibraryprovider/default-album/sa-csd-600.png
 
 #- type: certification
 #  name: Certified Kubernetes Security Specialist
