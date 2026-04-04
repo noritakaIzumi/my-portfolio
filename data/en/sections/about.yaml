@@ -79,6 +79,11 @@ badges:
     url: /files/csd_certificate_202340710.pdf
     badge: https://www.scrumalliance.org/images/badgelibraryprovider/default-album/sa-csd-600.png
 
+  - type: certification
+    name: Certified ScrumMaster®
+    url: /files/csm_certificate.pdf
+    badge: https://www.scrumalliance.org/images/badgelibraryprovider/default-album/sa-csm-600.png
+
 #- type: certification
 #  name: Certified Kubernetes Security Specialist
 #  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"

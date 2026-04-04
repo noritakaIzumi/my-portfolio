@@ -11,6 +11,14 @@ section:
 
 # Your accomplishments
 accomplishments:
+  - name: Certified ScrumMaster®
+    timeline: "Mar 2026 - Mar 2028"
+    organization:
+      name: ScrumAlliance
+      url: https://www.scrumalliance.org/
+    courseOverview: The Certified ScrumMaster® certification provides foundational knowledge of Scrum framework and agile principles. This course focuses on the ScrumMaster role as a servant leader and facilitator, helping teams understand Scrum events, artifacts, and roles to improve team collaboration and delivery.
+    certificateURL: "/files/csm_certificate.pdf"
+
   - name: Associate Big Data Analyst (ABDA™)
     timeline: "Jul 2025 - Present"
     organization:
@@ -28,7 +36,7 @@ accomplishments:
     certificateURL: "/files/pcap_certificate.pdf"
 
   - name: Certified Scrum Developer®
-    timeline: "Dec 2023 - Present"
+    timeline: "Dec 2023 - Mar 2028"
     organization:
       name: ScrumAlliance
       url: https://www.scrumalliance.org/
