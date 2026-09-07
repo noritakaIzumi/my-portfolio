@@ -70,5 +70,8 @@
     "start": "hugo server -wDF",
     "preview": "http-server --port 1313",
     "test": "npx playwright test"
-  }
+  },
+  "workspaces": [
+    "packages/hugoautogen"
+  ]
 }
