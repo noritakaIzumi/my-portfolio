@@ -12,7 +12,7 @@
 !.gitkeep
 
 # npm packages
-/node_modules
+node_modules
 
 # e2e tests
 /test-results/

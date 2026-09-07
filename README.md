@@ -36,3 +36,17 @@
 私について詳しく知りたい方は[トップページ](/)をご一読ください。
 
 ではまた😉
+
+## Amplify のビルド環境
+
+`amplify.yml` は **Amazon Linux 2023** のビルドイメージを使用します。
+Amplify コンソールの **Hosting → Build settings → Build image settings → Edit** で
+**Amazon Linux:2023** を選択して保存し、再ビルドしてください。
+ビルドイメージの選択は `amplify.yml` では変更できないため、既存アプリではこの設定変更が必要です。
+
+Amazon Linux 2 では、使用している Hugo Extended の実行に必要な `GLIBC_2.34` や
+`GLIBCXX_3.4.29` などが不足し、ビルドが失敗します。AL2023 は非 root ユーザーで
+実行されるため、システムへのインストールには `sudo` を使用しています。
+Hugo は `/usr/local/bin` にインストールし、`hugo version` で起動を確認してからビルドします。
+
+参考: [AWS の AL2023 ビルドイメージの説明](https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting-AL2023.html)

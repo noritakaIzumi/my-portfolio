@@ -1,6 +1,6 @@
 baseURL: https://portfolio.fairy-select.com/
 
-languageCode: en-us
+locale: "en-US"
 title: "Fairy Select"
 
 module:
@@ -17,20 +17,6 @@ module:
       target: static/fonts
     - source: static/images
       target: static/images
-
-# Manage languages
-# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
-#languages:
-#  en:
-#    languageCode: en
-#    languageName: English
-#    title: "John's Blog"
-#    weight: 1
-#  bn:
-#    languageCode: bn
-#    languageName: বাংলা
-#    title: "জনের ব্লগ"
-#    weight: 2
 
 # default language for the content
 defaultContentLanguage: en

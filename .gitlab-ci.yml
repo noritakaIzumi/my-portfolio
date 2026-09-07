@@ -1,4 +1,7 @@
-image: registry.gitlab.com/noritakaizumi/my-portfolio/hugo
+default:
+  image:
+    name: registry.gitlab.com/noritakaizumi/my-portfolio/hugo:latest
+    entrypoint: [""]
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive

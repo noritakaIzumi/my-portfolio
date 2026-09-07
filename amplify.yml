@@ -1,17 +1,20 @@
+# Requires Amazon Linux 2023 in Amplify Hosting > Build settings > Build image settings.
 version: 1
 env:
   variables:
-    VERSION_HUGO_EXTENDED: 0.138.0
+    VERSION_HUGO_EXTENDED: 0.165.0
 frontend:
   phases:
     preBuild:
       commands:
-        - yum install -y golang
+        - sudo yum install -y golang
         - |
           wget -q https://github.com/gohugoio/hugo/releases/download/v${VERSION_HUGO_EXTENDED}/hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz && \
             tar -zxf hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz hugo && \
-            mv hugo /usr/bin/hugo && \
-            rm -rf hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz
+            sudo install -m 0755 hugo /usr/local/bin/hugo && \
+            rm -f hugo hugo_extended_${VERSION_HUGO_EXTENDED}_Linux-64bit.tar.gz
+        - export PATH="/usr/local/bin:$PATH"
+        - hugo version
     build:
       commands:
         - npm ci
