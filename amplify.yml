@@ -22,7 +22,9 @@ frontend:
         - git clone https://github.com/noritakaIzumi/my-portfolio-posts.git
         - rm -rf my-portfolio-posts/.git || exit 1
         - mv my-portfolio-posts content || exit 1
+        - echo "AWS_BRANCH -> ${AWS_BRANCH}"
         - test "${AWS_BRANCH}" = "main" && BASE_URL="${BASE_URL_PRD}" || BASE_URL="https://${AWS_BRANCH}.${AWS_APP_ID}.amplifyapp.com/"
+        - echo "BASE_URL -> ${BASE_URL}"
         # https://github.com/gohugoio/hugo/issues/8025
         - |
           env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_REPOID=$GISCUS_REPOID \
