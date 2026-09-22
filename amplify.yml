@@ -3,6 +3,7 @@ version: 1
 env:
   variables:
     VERSION_HUGO_EXTENDED: 0.165.0
+    BASE_URL_PRD: https://portfolio.fairy-select.com/
 frontend:
   phases:
     preBuild:
@@ -18,15 +19,16 @@ frontend:
     build:
       commands:
         - npm ci
-        - "git clone https://oauth2:$ACCESS_TOKEN@gitlab.com/noritakaIzumi/my-portfolio-posts.git"
-        - "rm -rf my-portfolio-posts/.git || exit 1"
-        - "mv my-portfolio-posts content || exit 1"
+        - git clone https://github.com/noritakaIzumi/my-portfolio-posts.git
+        - rm -rf my-portfolio-posts/.git || exit 1
+        - mv my-portfolio-posts content || exit 1
+        - test "${AWS_BRANCH}" = "main" && BASE_URL="${BASE_URL_PRD}" || BASE_URL="https://${AWS_BRANCH}.${AWS_APP_ID}.amplifyapp.com/"
         # https://github.com/gohugoio/hugo/issues/8025
         - |
           env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_REPOID=$GISCUS_REPOID \
             env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORY=$GISCUS_CATEGORY \
             env HUGO_PARAMS_FEATURES_COMMENT_SERVICES_GISCUS_CATEGORYID=$GISCUS_CATEGORYID \
-            hugo --logLevel info --minify --cleanDestinationDir --gc --baseURL https://$AWS_BRANCH.$AWS_APP_ID.amplifyapp.com/ --buildDrafts
+            hugo --logLevel info --minify --cleanDestinationDir --gc --baseURL "$BASE_URL"
         # check there is no empty images
         - test $(find public/images/ -type f -exec stat -c '%s' {} \; | grep '^0$' | wc -l) = 0 || exit 1
   artifacts:
