@@ -1,4 +1,4 @@
-module gitlab.com/noritakaIzumi/my-portfolio
+module github.com/noritakaIzumi/my-portfolio
 
 go 1.22
 

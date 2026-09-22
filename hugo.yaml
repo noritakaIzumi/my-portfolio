@@ -62,10 +62,10 @@ params:
     favicon: /images/site/favicon.png
 
   # GitHub repo of your site
-  gitForge: gitlab
-  gitRepo: https://gitlab.com/noritakaIzumi/my-portfolio-posts
+  gitRepo: https://github.com/noritakaIzumi/my-portfolio-posts
+
   # Default branch of your Git repo
-  gitBranch: master
+  gitBranch: main
 
   # Configure the number of section title visible in the top navbar
   topNavbar:
