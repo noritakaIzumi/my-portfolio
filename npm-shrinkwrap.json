@@ -33,10 +33,10 @@
         "ityped": "^1.0.3",
         "katex": "^0.16.11",
         "mark.js": "^8.11.1",
-        "mermaid": "^9.2.1",
+        "mermaid": "^10.9.3",
         "plyr": "^3.7.2",
         "popper.js": "^1.16.1",
-        "postcss": "^8.4.41",
+        "postcss": "^8.5.23",
         "postcss-cli": "^11.0.0"
       }
     },
@@ -240,18 +240,18 @@
       }
     },
     "node_modules/@playwright/test": {
-      "version": "1.43.1",
-      "resolved": "https://registry.npmjs.org/@playwright/test/-/test-1.43.1.tgz",
-      "integrity": "sha512-HgtQzFgNEEo4TE22K/X7sYTYNqEMMTZmFS8kTq6m8hXj+m1D8TgwgIbumHddJa9h4yl4GkKb8/bgAl2+g7eDgA==",
+      "version": "1.63.0",
+      "resolved": "https://registry.npmjs.org/@playwright/test/-/test-1.63.0.tgz",
+      "integrity": "sha512-oxMK4vllB9RK5NQ2l1pq1IfOf2AvnEuj/vYGDj0H2nMtmtZpKtCwt/l00GEO6xjGfpBNAvjovvYdCm50dRQkpQ==",
       "dev": true,
       "dependencies": {
-        "playwright": "1.43.1"
+        "playwright": "1.63.0"
       },
       "bin": {
         "playwright": "cli.js"
       },
       "engines": {
-        "node": ">=16"
+        "node": ">=20"
       }
     },
     "node_modules/@popperjs/core": {
@@ -530,6 +530,15 @@
         "@types/d3-selection": "*"
       }
     },
+    "node_modules/@types/debug": {
+      "version": "4.1.13",
+      "resolved": "https://registry.npmjs.org/@types/debug/-/debug-4.1.13.tgz",
+      "integrity": "sha512-KSVgmQmzMwPlmtljOomayoR89W4FynCAi3E8PPs7vmDVPe84hT+vGPKkJfThkmXs0x0jAaa9U8uW8bbfyS2fWw==",
+      "dev": true,
+      "dependencies": {
+        "@types/ms": "*"
+      }
+    },
     "node_modules/@types/geojson": {
       "version": "7946.0.16",
       "resolved": "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.16.tgz",
@@ -542,12 +551,33 @@
       "integrity": "sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==",
       "dev": true
     },
+    "node_modules/@types/mdast": {
+      "version": "3.0.15",
+      "resolved": "https://registry.npmjs.org/@types/mdast/-/mdast-3.0.15.tgz",
+      "integrity": "sha512-LnwD+mUEfxWMa1QpDraczIn6k0Ee3SMicuYSSzS6ZYl2gKS09EClnJYGd8Du6rfc5r/GZEk5o1mRb8TaTj03sQ==",
+      "dev": true,
+      "dependencies": {
+        "@types/unist": "^2"
+      }
+    },
+    "node_modules/@types/ms": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/@types/ms/-/ms-2.1.0.tgz",
+      "integrity": "sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==",
+      "dev": true
+    },
     "node_modules/@types/trusted-types": {
       "version": "2.0.7",
       "resolved": "https://registry.npmjs.org/@types/trusted-types/-/trusted-types-2.0.7.tgz",
       "integrity": "sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==",
       "dev": true,
       "optional": true
+    },
+    "node_modules/@types/unist": {
+      "version": "2.0.11",
+      "resolved": "https://registry.npmjs.org/@types/unist/-/unist-2.0.11.tgz",
+      "integrity": "sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==",
+      "dev": true
     },
     "node_modules/@types/web-animations-js": {
       "version": "2.2.16",
@@ -593,9 +623,9 @@
       }
     },
     "node_modules/ajv": {
-      "version": "6.12.6",
-      "resolved": "https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz",
-      "integrity": "sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==",
+      "version": "6.15.0",
+      "resolved": "https://registry.npmjs.org/ajv/-/ajv-6.15.0.tgz",
+      "integrity": "sha512-fgFx7Hfoq60ytK2c7DhnF8jIvzYgOMxfugjLOSMHjLIPgenqa7S7oaagATUq99mV6IYvN2tRmC0wnTYX6iPbMw==",
       "dev": true,
       "dependencies": {
         "fast-deep-equal": "^3.1.1",
@@ -814,6 +844,18 @@
       "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==",
       "dev": true
     },
+    "node_modules/baseline-browser-mapping": {
+      "version": "2.11.26",
+      "resolved": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.26.tgz",
+      "integrity": "sha512-GLQdD3y6UF8iVuMJl5fHgE4jdn/ua7n+toKfLgNlg3BqQtOZjpy68T8Tup8/wGWZCDlm7KMg7tPb4MPn7oN0TQ==",
+      "dev": true,
+      "bin": {
+        "baseline-browser-mapping": "dist/cli.cjs"
+      },
+      "engines": {
+        "node": ">=6.0.0"
+      }
+    },
     "node_modules/binary-extensions": {
       "version": "2.2.0",
       "resolved": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz",
@@ -843,9 +885,9 @@
       }
     },
     "node_modules/brace-expansion": {
-      "version": "1.1.11",
-      "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz",
-      "integrity": "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==",
+      "version": "1.1.21",
+      "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.21.tgz",
+      "integrity": "sha512-9zeA+KLZNNzglF2TPKRQEDyx6Yby7daAkuy8MiPzpXPsYDWi/DRM8jmwUDxokQjYqBpv5DgPiwD4h4ZZSy1Ujw==",
       "dev": true,
       "dependencies": {
         "balanced-match": "^1.0.0",
@@ -865,9 +907,9 @@
       }
     },
     "node_modules/browserslist": {
-      "version": "4.24.2",
-      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.24.2.tgz",
-      "integrity": "sha512-ZIc+Q62revdMcqC6aChtW4jz3My3klmCO1fEmINZY/8J3EpBg5/A/D0AKmBveUh6pgoeycoMkVMko84tuYS+Gg==",
+      "version": "4.29.1",
+      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.29.1.tgz",
+      "integrity": "sha512-AUdjuRyCNGUYtqpqfTmWyM4fXay8yIQhmLnvYe/THMGfT9B/34X7xQd3ifKxwyNPPpowVBjLb+64BN9Rn1mizw==",
       "dev": true,
       "funding": [
         {
@@ -884,10 +926,11 @@
         }
       ],
       "dependencies": {
-        "caniuse-lite": "^1.0.30001669",
-        "electron-to-chromium": "^1.5.41",
-        "node-releases": "^2.0.18",
-        "update-browserslist-db": "^1.1.1"
+        "baseline-browser-mapping": "^2.11.25",
+        "caniuse-lite": "^1.0.30001810",
+        "electron-to-chromium": "^1.5.438",
+        "node-releases": "^2.0.57",
+        "update-browserslist-db": "^1.3.3"
       },
       "bin": {
         "browserslist": "cli.js"
@@ -944,9 +987,9 @@
       }
     },
     "node_modules/caniuse-lite": {
-      "version": "1.0.30001680",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001680.tgz",
-      "integrity": "sha512-rPQy70G6AGUMnbwS1z6Xg+RkHYPAi18ihs47GH0jcxIG7wArmPgY3XbS2sRdBbxJljp3thdT8BIqv9ccCypiPA==",
+      "version": "1.0.30001812",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001812.tgz",
+      "integrity": "sha512-qN+QNNBr93TCmFrmte0bBCjSDMuRvt78VlHT99qIGPszm4QsqCX8lnyWUFkHi8B7ZBAPq8SH+UqyXNy/odMdng==",
       "dev": true,
       "funding": [
         {
@@ -977,6 +1020,16 @@
       },
       "funding": {
         "url": "https://github.com/chalk/chalk?sponsor=1"
+      }
+    },
+    "node_modules/character-entities": {
+      "version": "2.0.2",
+      "resolved": "https://registry.npmjs.org/character-entities/-/character-entities-2.0.2.tgz",
+      "integrity": "sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==",
+      "dev": true,
+      "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/wooorm"
       }
     },
     "node_modules/chokidar": {
@@ -1092,9 +1145,9 @@
       }
     },
     "node_modules/cross-spawn": {
-      "version": "7.0.3",
-      "resolved": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz",
-      "integrity": "sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==",
+      "version": "7.0.6",
+      "resolved": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz",
+      "integrity": "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==",
       "dev": true,
       "dependencies": {
         "path-key": "^3.1.0",
@@ -1610,12 +1663,12 @@
       }
     },
     "node_modules/dagre-d3-es": {
-      "version": "7.0.9",
-      "resolved": "https://registry.npmjs.org/dagre-d3-es/-/dagre-d3-es-7.0.9.tgz",
-      "integrity": "sha512-rYR4QfVmy+sR44IBDvVtcAmOReGBvRCWDpO2QjYwqgh9yijw6eSHBqaPG/LIOEy7aBsniLvtMW6pg19qJhq60w==",
+      "version": "7.0.13",
+      "resolved": "https://registry.npmjs.org/dagre-d3-es/-/dagre-d3-es-7.0.13.tgz",
+      "integrity": "sha512-efEhnxpSuwpYOKRm/L5KbqoZmNNukHa/Flty4Wp62JRvgH2ojwVgPgdYyr4twpieZnyRDdIH7PY2mopX26+j2Q==",
       "dev": true,
       "dependencies": {
-        "d3": "^7.8.2",
+        "d3": "^7.9.0",
         "lodash-es": "^4.17.21"
       }
     },
@@ -1640,6 +1693,19 @@
         "supports-color": {
           "optional": true
         }
+      }
+    },
+    "node_modules/decode-named-character-reference": {
+      "version": "1.3.0",
+      "resolved": "https://registry.npmjs.org/decode-named-character-reference/-/decode-named-character-reference-1.3.0.tgz",
+      "integrity": "sha512-GtpQYB283KrPp6nRw50q3U9/VfOutZOe103qlN7BPP6Ad27xYnOIWv4lPzo8HCAL+mMZofJ9KEy30fq6MfaK6Q==",
+      "dev": true,
+      "dependencies": {
+        "character-entities": "^2.0.0"
+      },
+      "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/wooorm"
       }
     },
     "node_modules/deep-is": {
@@ -1697,6 +1763,24 @@
         "node": ">= 0.6.0"
       }
     },
+    "node_modules/dequal": {
+      "version": "2.0.3",
+      "resolved": "https://registry.npmjs.org/dequal/-/dequal-2.0.3.tgz",
+      "integrity": "sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==",
+      "dev": true,
+      "engines": {
+        "node": ">=6"
+      }
+    },
+    "node_modules/diff": {
+      "version": "5.2.2",
+      "resolved": "https://registry.npmjs.org/diff/-/diff-5.2.2.tgz",
+      "integrity": "sha512-vtcDfH3TOjP8UekytvnHH1o1P4FcUdt4eQ1Y+Abap1tk/OB2MWQvcwS2ClCd1zuIhc3JKOx6p3kod8Vfys3E+A==",
+      "dev": true,
+      "engines": {
+        "node": ">=0.3.1"
+      }
+    },
     "node_modules/doctrine": {
       "version": "3.0.0",
       "resolved": "https://registry.npmjs.org/doctrine/-/doctrine-3.0.0.tgz",
@@ -1710,21 +1794,24 @@
       }
     },
     "node_modules/dompurify": {
-      "version": "2.4.3",
-      "resolved": "https://registry.npmjs.org/dompurify/-/dompurify-2.4.3.tgz",
-      "integrity": "sha512-q6QaLcakcRjebxjg8/+NP+h0rPfatOgOzc46Fst9VAA3jF2ApfKBNKMzdP4DYTqtUMXSCd5pRS/8Po/OmoCHZQ==",
-      "dev": true
+      "version": "3.4.16",
+      "resolved": "https://registry.npmjs.org/dompurify/-/dompurify-3.4.16.tgz",
+      "integrity": "sha512-sqo+pNp3qRhCIpbgRi1y8Tgk27Bo2Ry7w0dC1NBeNTdZChWjz9Xb/KOoZbRP/R6pQZ80Qw8YhXw13hWWBbMRnQ==",
+      "dev": true,
+      "optionalDependencies": {
+        "@types/trusted-types": "^2.0.7"
+      }
     },
     "node_modules/electron-to-chromium": {
-      "version": "1.5.62",
-      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.62.tgz",
-      "integrity": "sha512-t8c+zLmJHa9dJy96yBZRXGQYoiCEnHYgFwn1asvSPZSUdVxnB62A4RASd7k41ytG3ErFBA0TpHlKg9D9SQBmLg==",
+      "version": "1.5.439",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.439.tgz",
+      "integrity": "sha512-qu6QIPXhsb+CRcAiTMNjR4A1y/7tCYKkKjr5CZXRVih6qkDf79peZ2BpEU3qoDBNCRrcy3Mra3X9nG5oruuA7Q==",
       "dev": true
     },
     "node_modules/elkjs": {
-      "version": "0.8.2",
-      "resolved": "https://registry.npmjs.org/elkjs/-/elkjs-0.8.2.tgz",
-      "integrity": "sha512-L6uRgvZTH+4OF5NE/MBbzQx/WYpru1xCBE9respNj6qznEewGUIfhzmm7horWWxbNO2M0WckQypGctR8lH79xQ==",
+      "version": "0.9.3",
+      "resolved": "https://registry.npmjs.org/elkjs/-/elkjs-0.9.3.tgz",
+      "integrity": "sha512-f/ZeWvW/BCXbhGEf1Ujp29EASo/lk1FDnETgNKwJrsVvGZhUWCZyg3xLJjAsxfOmt8KjswHmI5EwCQcPMpOYhQ==",
       "dev": true
     },
     "node_modules/emoji-regex": {
@@ -2443,9 +2530,9 @@
       }
     },
     "node_modules/flatted": {
-      "version": "3.2.9",
-      "resolved": "https://registry.npmjs.org/flatted/-/flatted-3.2.9.tgz",
-      "integrity": "sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==",
+      "version": "3.4.4",
+      "resolved": "https://registry.npmjs.org/flatted/-/flatted-3.4.4.tgz",
+      "integrity": "sha512-5+ybhBZANEJxaH3X5evAFatUxLfEHSr7n6kYJ+1Qd0mUqr4eu9gIf6GDbWHf8RJijHrjjO8G+la14SlL2SeS1Q==",
       "dev": true
     },
     "node_modules/for-each": {
@@ -3185,10 +3272,20 @@
       "dev": true
     },
     "node_modules/js-yaml": {
-      "version": "4.1.0",
-      "resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz",
-      "integrity": "sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==",
+      "version": "4.3.2",
+      "resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.3.2.tgz",
+      "integrity": "sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==",
       "dev": true,
+      "funding": [
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/puzrin"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/nodeca"
+        }
+      ],
       "dependencies": {
         "argparse": "^2.0.1"
       },
@@ -3269,6 +3366,15 @@
       "integrity": "sha512-Ls993zuzfayK269Svk9hzpeGUKob/sIgZzyHYdjQoAdQetRKpOLj+k/QQQ/6Qi0Yz65mlROrfd+Ev+1+7dz9Kw==",
       "dev": true
     },
+    "node_modules/kleur": {
+      "version": "4.1.5",
+      "resolved": "https://registry.npmjs.org/kleur/-/kleur-4.1.5.tgz",
+      "integrity": "sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==",
+      "dev": true,
+      "engines": {
+        "node": ">=6"
+      }
+    },
     "node_modules/layout-base": {
       "version": "1.0.2",
       "resolved": "https://registry.npmjs.org/layout-base/-/layout-base-1.0.2.tgz",
@@ -3322,9 +3428,9 @@
       }
     },
     "node_modules/lodash-es": {
-      "version": "4.17.21",
-      "resolved": "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz",
-      "integrity": "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==",
+      "version": "4.18.1",
+      "resolved": "https://registry.npmjs.org/lodash-es/-/lodash-es-4.18.1.tgz",
+      "integrity": "sha512-J8xewKD/Gk22OZbhpOVSwcs60zhd95ESDwezOFuA3/099925PdHJ7OFHNTGtajL3AlZkykD32HykiMo+BIBI8A==",
       "dev": true
     },
     "node_modules/lodash.merge": {
@@ -3363,6 +3469,43 @@
         "node": ">= 20"
       }
     },
+    "node_modules/mdast-util-from-markdown": {
+      "version": "1.3.1",
+      "resolved": "https://registry.npmjs.org/mdast-util-from-markdown/-/mdast-util-from-markdown-1.3.1.tgz",
+      "integrity": "sha512-4xTO/M8c82qBcnQc1tgpNtubGUW/Y1tBQ1B0i5CtSoelOLKFYlElIr3bvgREYYO5iRqbMY1YuqZng0GVOI8Qww==",
+      "dev": true,
+      "dependencies": {
+        "@types/mdast": "^3.0.0",
+        "@types/unist": "^2.0.0",
+        "decode-named-character-reference": "^1.0.0",
+        "mdast-util-to-string": "^3.1.0",
+        "micromark": "^3.0.0",
+        "micromark-util-decode-numeric-character-reference": "^1.0.0",
+        "micromark-util-decode-string": "^1.0.0",
+        "micromark-util-normalize-identifier": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.0",
+        "unist-util-stringify-position": "^3.0.0",
+        "uvu": "^0.5.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/unified"
+      }
+    },
+    "node_modules/mdast-util-to-string": {
+      "version": "3.2.0",
+      "resolved": "https://registry.npmjs.org/mdast-util-to-string/-/mdast-util-to-string-3.2.0.tgz",
+      "integrity": "sha512-V4Zn/ncyN1QNSqSBxTrMOLpjr+IKdHl2v3KVLoWmDPscP4r9GcCi71gjgvUV1SFSKh92AjAG4peFuBl2/YgCJg==",
+      "dev": true,
+      "dependencies": {
+        "@types/mdast": "^3.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/unified"
+      }
+    },
     "node_modules/merge2": {
       "version": "1.4.1",
       "resolved": "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz",
@@ -3373,28 +3516,474 @@
       }
     },
     "node_modules/mermaid": {
-      "version": "9.4.3",
-      "resolved": "https://registry.npmjs.org/mermaid/-/mermaid-9.4.3.tgz",
-      "integrity": "sha512-TLkQEtqhRSuEHSE34lh5bCa94KATCyluAXmFnNI2PRZwOpXFeqiJWwZl+d2CcemE1RS6QbbueSSq9QIg8Uxcyw==",
+      "version": "10.9.8",
+      "resolved": "https://registry.npmjs.org/mermaid/-/mermaid-10.9.8.tgz",
+      "integrity": "sha512-gmIhmkmD/3DL5lErDV71E/cFUkEbBW4VTFpsJH1HSYjeBICRKOoc4AZem+RNz/FhhCXKBMZiD75bIfBlb2A4yA==",
       "dev": true,
       "dependencies": {
-        "@braintree/sanitize-url": "^6.0.0",
-        "cytoscape": "^3.23.0",
+        "@braintree/sanitize-url": "^6.0.1",
+        "@types/d3-scale": "^4.0.3",
+        "@types/d3-scale-chromatic": "^3.0.0",
+        "cytoscape": "^3.28.1",
         "cytoscape-cose-bilkent": "^4.1.0",
-        "cytoscape-fcose": "^2.1.0",
         "d3": "^7.4.0",
-        "dagre-d3-es": "7.0.9",
+        "d3-sankey": "^0.12.3",
+        "dagre-d3-es": "7.0.13",
         "dayjs": "^1.11.7",
-        "dompurify": "2.4.3",
-        "elkjs": "^0.8.2",
+        "dompurify": "^3.2.4",
+        "elkjs": "^0.9.0",
+        "katex": "^0.16.9",
         "khroma": "^2.0.0",
         "lodash-es": "^4.17.21",
+        "mdast-util-from-markdown": "^1.3.0",
         "non-layered-tidy-tree-layout": "^2.0.2",
-        "stylis": "^4.1.2",
+        "stylis": "^4.1.3",
         "ts-dedent": "^2.2.0",
-        "uuid": "^9.0.0",
+        "uuid": "^9.0.0 || ^10 || ^11.1.0 || ^12 || ^13 || ^14.0.0",
         "web-worker": "^1.2.0"
       }
+    },
+    "node_modules/micromark": {
+      "version": "3.2.0",
+      "resolved": "https://registry.npmjs.org/micromark/-/micromark-3.2.0.tgz",
+      "integrity": "sha512-uD66tJj54JLYq0De10AhWycZWGQNUvDI55xPgk2sQM5kn1JYlhbCMTtEeT27+vAhW2FBQxLlOmS3pmA7/2z4aA==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "@types/debug": "^4.0.0",
+        "debug": "^4.0.0",
+        "decode-named-character-reference": "^1.0.0",
+        "micromark-core-commonmark": "^1.0.1",
+        "micromark-factory-space": "^1.0.0",
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-chunked": "^1.0.0",
+        "micromark-util-combine-extensions": "^1.0.0",
+        "micromark-util-decode-numeric-character-reference": "^1.0.0",
+        "micromark-util-encode": "^1.0.0",
+        "micromark-util-normalize-identifier": "^1.0.0",
+        "micromark-util-resolve-all": "^1.0.0",
+        "micromark-util-sanitize-uri": "^1.0.0",
+        "micromark-util-subtokenize": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.1",
+        "uvu": "^0.5.0"
+      }
+    },
+    "node_modules/micromark-core-commonmark": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-core-commonmark/-/micromark-core-commonmark-1.1.0.tgz",
+      "integrity": "sha512-BgHO1aRbolh2hcrzL2d1La37V0Aoz73ymF8rAcKnohLy93titmv62E0gP8Hrx9PKcKrqCZ1BbLGbP3bEhoXYlw==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "decode-named-character-reference": "^1.0.0",
+        "micromark-factory-destination": "^1.0.0",
+        "micromark-factory-label": "^1.0.0",
+        "micromark-factory-space": "^1.0.0",
+        "micromark-factory-title": "^1.0.0",
+        "micromark-factory-whitespace": "^1.0.0",
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-chunked": "^1.0.0",
+        "micromark-util-classify-character": "^1.0.0",
+        "micromark-util-html-tag-name": "^1.0.0",
+        "micromark-util-normalize-identifier": "^1.0.0",
+        "micromark-util-resolve-all": "^1.0.0",
+        "micromark-util-subtokenize": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.1",
+        "uvu": "^0.5.0"
+      }
+    },
+    "node_modules/micromark-factory-destination": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-factory-destination/-/micromark-factory-destination-1.1.0.tgz",
+      "integrity": "sha512-XaNDROBgx9SgSChd69pjiGKbV+nfHGDPVYFs5dOoDd7ZnMAE+Cuu91BCpsY8RT2NP9vo/B8pds2VQNCLiu0zhg==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-factory-label": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-factory-label/-/micromark-factory-label-1.1.0.tgz",
+      "integrity": "sha512-OLtyez4vZo/1NjxGhcpDSbHQ+m0IIGnT8BoPamh+7jVlzLJBH98zzuCoUeMxvM6WsNeh8wx8cKvqLiPHEACn0w==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.0",
+        "uvu": "^0.5.0"
+      }
+    },
+    "node_modules/micromark-factory-space": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-factory-space/-/micromark-factory-space-1.1.0.tgz",
+      "integrity": "sha512-cRzEj7c0OL4Mw2v6nwzttyOZe8XY/Z8G0rzmWQZTBi/jjwyw/U4uqKtUORXQrR5bAZZnbTI/feRV/R7hc4jQYQ==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-types": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-factory-title": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-factory-title/-/micromark-factory-title-1.1.0.tgz",
+      "integrity": "sha512-J7n9R3vMmgjDOCY8NPw55jiyaQnH5kBdV2/UXCtZIpnHH3P6nHUKaH7XXEYuWwx/xUJcawa8plLBEjMPU24HzQ==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-factory-space": "^1.0.0",
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-factory-whitespace": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-factory-whitespace/-/micromark-factory-whitespace-1.1.0.tgz",
+      "integrity": "sha512-v2WlmiymVSp5oMg+1Q0N1Lxmt6pMhIHD457whWM7/GUlEks1hI9xj5w3zbc4uuMKXGisksZk8DzP2UyGbGqNsQ==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-factory-space": "^1.0.0",
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-character": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-character/-/micromark-util-character-1.2.0.tgz",
+      "integrity": "sha512-lXraTwcX3yH/vMDaFWCQJP1uIszLVebzUa3ZHdrgxr7KEU/9mL4mVgCpGbyhvNLNlauROiNUq7WN5u7ndbY6xg==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-chunked": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-chunked/-/micromark-util-chunked-1.1.0.tgz",
+      "integrity": "sha512-Ye01HXpkZPNcV6FiyoW2fGZDUw4Yc7vT0E9Sad83+bEDiCJ1uXu0S3mr8WLpsz3HaG3x2q0HM6CTuPdcZcluFQ==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-symbol": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-classify-character": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-classify-character/-/micromark-util-classify-character-1.1.0.tgz",
+      "integrity": "sha512-SL0wLxtKSnklKSUplok1WQFoGhUdWYKggKUiqhX+Swala+BtptGCu5iPRc+xvzJ4PXE/hwM3FNXsfEVgoZsWbw==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-combine-extensions": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-combine-extensions/-/micromark-util-combine-extensions-1.1.0.tgz",
+      "integrity": "sha512-Q20sp4mfNf9yEqDL50WwuWZHUrCO4fEyeDCnMGmG5Pr0Cz15Uo7KBs6jq+dq0EgX4DPwwrh9m0X+zPV1ypFvUA==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-chunked": "^1.0.0",
+        "micromark-util-types": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-decode-numeric-character-reference": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-decode-numeric-character-reference/-/micromark-util-decode-numeric-character-reference-1.1.0.tgz",
+      "integrity": "sha512-m9V0ExGv0jB1OT21mrWcuf4QhP46pH1KkfWy9ZEezqHKAxkj4mPCy3nIH1rkbdMlChLHX531eOrymlwyZIf2iw==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-symbol": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-decode-string": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-decode-string/-/micromark-util-decode-string-1.1.0.tgz",
+      "integrity": "sha512-YphLGCK8gM1tG1bd54azwyrQRjCFcmgj2S2GoJDNnh4vYtnL38JS8M4gpxzOPNyHdNEpheyWXCTnnTDY3N+NVQ==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "decode-named-character-reference": "^1.0.0",
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-decode-numeric-character-reference": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-encode": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-encode/-/micromark-util-encode-1.1.0.tgz",
+      "integrity": "sha512-EuEzTWSTAj9PA5GOAs992GzNh2dGQO52UvAbtSOMvXTxv3Criqb6IOzJUBCmEqrrXSblJIJBbFFv6zPxpreiJw==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ]
+    },
+    "node_modules/micromark-util-html-tag-name": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-html-tag-name/-/micromark-util-html-tag-name-1.2.0.tgz",
+      "integrity": "sha512-VTQzcuQgFUD7yYztuQFKXT49KghjtETQ+Wv/zUjGSGBioZnkA4P1XXZPT1FHeJA6RwRXSF47yvJ1tsJdoxwO+Q==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ]
+    },
+    "node_modules/micromark-util-normalize-identifier": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-normalize-identifier/-/micromark-util-normalize-identifier-1.1.0.tgz",
+      "integrity": "sha512-N+w5vhqrBihhjdpM8+5Xsxy71QWqGn7HYNUvch71iV2PM7+E3uWGox1Qp90loa1ephtCxG2ftRV/Conitc6P2Q==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-symbol": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-resolve-all": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-resolve-all/-/micromark-util-resolve-all-1.1.0.tgz",
+      "integrity": "sha512-b/G6BTMSg+bX+xVCshPTPyAu2tmA0E4X98NSR7eIbeC6ycCqCeE7wjfDIgzEbkzdEVJXRtOG4FbEm/uGbCRouA==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-types": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-sanitize-uri": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-sanitize-uri/-/micromark-util-sanitize-uri-1.2.0.tgz",
+      "integrity": "sha512-QO4GXv0XZfWey4pYFndLUKEAktKkG5kZTdUNaTAkzbuJxn2tNBOr+QtxR2XpWaMhbImT2dPzyLrPXLlPhph34A==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-character": "^1.0.0",
+        "micromark-util-encode": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0"
+      }
+    },
+    "node_modules/micromark-util-subtokenize": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-subtokenize/-/micromark-util-subtokenize-1.1.0.tgz",
+      "integrity": "sha512-kUQHyzRoxvZO2PuLzMt2P/dwVsTiivCK8icYTeR+3WgbuPqfHgPPy7nFKbeqRivBvn/3N3GBiNC+JRTMSxEC7A==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ],
+      "dependencies": {
+        "micromark-util-chunked": "^1.0.0",
+        "micromark-util-symbol": "^1.0.0",
+        "micromark-util-types": "^1.0.0",
+        "uvu": "^0.5.0"
+      }
+    },
+    "node_modules/micromark-util-symbol": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-symbol/-/micromark-util-symbol-1.1.0.tgz",
+      "integrity": "sha512-uEjpEYY6KMs1g7QfJ2eX1SQEV+ZT4rUD3UcF6l57acZvLNK7PBZL+ty82Z1qhK1/yXIY4bdx04FKMgR0g4IAag==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ]
+    },
+    "node_modules/micromark-util-types": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/micromark-util-types/-/micromark-util-types-1.1.0.tgz",
+      "integrity": "sha512-ukRBgie8TIAcacscVHSiddHjO4k/q3pnedmzMQ4iwDcK0FtFCohKOlFbaOL/mPgfnPsL3C1ZyxJa4sbWrBl3jg==",
+      "dev": true,
+      "funding": [
+        {
+          "type": "GitHub Sponsors",
+          "url": "https://github.com/sponsors/unifiedjs"
+        },
+        {
+          "type": "OpenCollective",
+          "url": "https://opencollective.com/unified"
+        }
+      ]
     },
     "node_modules/micromatch": {
       "version": "4.0.8",
@@ -3410,9 +3999,9 @@
       }
     },
     "node_modules/minimatch": {
-      "version": "3.1.2",
-      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz",
-      "integrity": "sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==",
+      "version": "3.1.5",
+      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz",
+      "integrity": "sha512-VgjWUsnnT6n+NUk6eZq77zeFdpW2LWDzP6zFGrCbHXiYNul5Dzqk2HHQ5uFH2DNW5Xbp8+jVzaeNt94ssEEl4w==",
       "dev": true,
       "dependencies": {
         "brace-expansion": "^1.1.7"
@@ -3430,6 +4019,15 @@
         "url": "https://github.com/sponsors/ljharb"
       }
     },
+    "node_modules/mri": {
+      "version": "1.2.0",
+      "resolved": "https://registry.npmjs.org/mri/-/mri-1.2.0.tgz",
+      "integrity": "sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==",
+      "dev": true,
+      "engines": {
+        "node": ">=4"
+      }
+    },
     "node_modules/ms": {
       "version": "2.1.2",
       "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
@@ -3441,9 +4039,9 @@
       "link": true
     },
     "node_modules/nanoid": {
-      "version": "3.3.7",
-      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.7.tgz",
-      "integrity": "sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==",
+      "version": "3.3.19",
+      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.19.tgz",
+      "integrity": "sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==",
       "dev": true,
       "funding": [
         {
@@ -3465,10 +4063,13 @@
       "dev": true
     },
     "node_modules/node-releases": {
-      "version": "2.0.18",
-      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.18.tgz",
-      "integrity": "sha512-d9VeXT4SJ7ZeOqGX6R5EM022wpL+eWPooLI+5UpWn2jCT1aosUQEhQP214x33Wkwx3JQMvIm+tIoVOdodFS40g==",
-      "dev": true
+      "version": "2.0.57",
+      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.57.tgz",
+      "integrity": "sha512-kQK9LGGFiHtrWiNhZtA7Qbw17AQz+dmsEKODRIVTXA9+e5MS/2gZEBhYJt13GrAz5/IOZKddH/0Z3TP/Zgo+yw==",
+      "dev": true,
+      "engines": {
+        "node": ">=18"
+      }
     },
     "node_modules/non-layered-tidy-tree-layout": {
       "version": "2.0.2",
@@ -3708,9 +4309,9 @@
       "dev": true
     },
     "node_modules/picomatch": {
-      "version": "2.3.1",
-      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz",
-      "integrity": "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==",
+      "version": "2.3.2",
+      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.2.tgz",
+      "integrity": "sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==",
       "dev": true,
       "engines": {
         "node": ">=8.6"
@@ -3729,47 +4330,30 @@
       }
     },
     "node_modules/playwright": {
-      "version": "1.43.1",
-      "resolved": "https://registry.npmjs.org/playwright/-/playwright-1.43.1.tgz",
-      "integrity": "sha512-V7SoH0ai2kNt1Md9E3Gwas5B9m8KR2GVvwZnAI6Pg0m3sh7UvgiYhRrhsziCmqMJNouPckiOhk8T+9bSAK0VIA==",
+      "version": "1.63.0",
+      "resolved": "https://registry.npmjs.org/playwright/-/playwright-1.63.0.tgz",
+      "integrity": "sha512-+7ziBLidS4NaNCdt57SUDT+wYmmd5fmiQejUic/kb+YsYSCPyOOE9sebzMjNmQrsnNpDJqd4WHvV/8lfKfUDUg==",
       "dev": true,
       "dependencies": {
-        "playwright-core": "1.43.1"
+        "playwright-core": "1.63.0"
       },
       "bin": {
         "playwright": "cli.js"
       },
       "engines": {
-        "node": ">=16"
-      },
-      "optionalDependencies": {
-        "fsevents": "2.3.2"
+        "node": ">=20"
       }
     },
     "node_modules/playwright-core": {
-      "version": "1.43.1",
-      "resolved": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.43.1.tgz",
-      "integrity": "sha512-EI36Mto2Vrx6VF7rm708qSnesVQKbxEWvPrfA1IPY6HgczBplDx7ENtx+K2n4kJ41sLLkuGfmb0ZLSSXlDhqPg==",
+      "version": "1.63.0",
+      "resolved": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.63.0.tgz",
+      "integrity": "sha512-rYCsBF/M5HjUch52bbtVONEFjv6Xu8sm8h72dNlR5bzIE1fvC/bxgspzkjSfU+MweEMmPM8KJebG6nnyxo5mCg==",
       "dev": true,
       "bin": {
         "playwright-core": "cli.js"
       },
       "engines": {
-        "node": ">=16"
-      }
-    },
-    "node_modules/playwright/node_modules/fsevents": {
-      "version": "2.3.2",
-      "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz",
-      "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==",
-      "dev": true,
-      "hasInstallScript": true,
-      "optional": true,
-      "os": [
-        "darwin"
-      ],
-      "engines": {
-        "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
+        "node": ">=20"
       }
     },
     "node_modules/plyr": {
@@ -3813,9 +4397,9 @@
       }
     },
     "node_modules/postcss": {
-      "version": "8.4.49",
-      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.4.49.tgz",
-      "integrity": "sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==",
+      "version": "8.5.28",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.28.tgz",
+      "integrity": "sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==",
       "dev": true,
       "funding": [
         {
@@ -3832,7 +4416,7 @@
         }
       ],
       "dependencies": {
-        "nanoid": "^3.3.7",
+        "nanoid": "^3.3.18",
         "picocolors": "^1.1.1",
         "source-map-js": "^1.2.1"
       },
@@ -4143,6 +4727,18 @@
       "resolved": "https://registry.npmjs.org/rw/-/rw-1.3.3.tgz",
       "integrity": "sha512-PdhdWy89SiZogBLaw42zdeqtRJ//zFd2PgQavcICDUgJT5oW10QCRKbJ6bg4r0/UY2M6BWd5tkxuGFRvCkgfHQ==",
       "dev": true
+    },
+    "node_modules/sade": {
+      "version": "1.8.1",
+      "resolved": "https://registry.npmjs.org/sade/-/sade-1.8.1.tgz",
+      "integrity": "sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==",
+      "dev": true,
+      "dependencies": {
+        "mri": "^1.1.0"
+      },
+      "engines": {
+        "node": ">=6"
+      }
     },
     "node_modules/safe-array-concat": {
       "version": "1.0.1",
@@ -4584,6 +5180,19 @@
         "url": "https://github.com/sponsors/sindresorhus"
       }
     },
+    "node_modules/unist-util-stringify-position": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/unist-util-stringify-position/-/unist-util-stringify-position-3.0.3.tgz",
+      "integrity": "sha512-k5GzIBZ/QatR8N5X2y+drfpWG8IDBzdnVj6OInRNWm1oXrzydiaAT2OQiA8DPRRZyAKb9b6I2a6PxYklZD0gKg==",
+      "dev": true,
+      "dependencies": {
+        "@types/unist": "^2.0.0"
+      },
+      "funding": {
+        "type": "opencollective",
+        "url": "https://opencollective.com/unified"
+      }
+    },
     "node_modules/universalify": {
       "version": "2.0.1",
       "resolved": "https://registry.npmjs.org/universalify/-/universalify-2.0.1.tgz",
@@ -4594,9 +5203,9 @@
       }
     },
     "node_modules/update-browserslist-db": {
-      "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.1.1.tgz",
-      "integrity": "sha512-R8UzCaa9Az+38REPiJ1tXlImTJXlVfgHZsglwBD/k6nj76ctsH1E3q4doGrukiLQd3sGQYu56r5+lo5r94l29A==",
+      "version": "1.3.3",
+      "resolved": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.3.3.tgz",
+      "integrity": "sha512-pJ2sYawQS0R/WI928Gj5GlPhTGzbMelq0+4INtSYNDV9ErKJcX6xjGWkoG/VnB3dpUm00zALaqkrUD77pO5TDQ==",
       "dev": true,
       "funding": [
         {
@@ -4614,7 +5223,7 @@
       ],
       "dependencies": {
         "escalade": "^3.2.0",
-        "picocolors": "^1.1.0"
+        "picocolors": "^1.1.1"
       },
       "bin": {
         "update-browserslist-db": "cli.js"
@@ -4639,16 +5248,34 @@
       "dev": true
     },
     "node_modules/uuid": {
-      "version": "9.0.1",
-      "resolved": "https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz",
-      "integrity": "sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==",
+      "version": "14.0.2",
+      "resolved": "https://registry.npmjs.org/uuid/-/uuid-14.0.2.tgz",
+      "integrity": "sha512-xZe/16rV4aa+HGSOCiY2YeLT1OybRLrrkL/Rqaq7p7GMVXjFh+6wN4oMYgjFmnSnhY8t6Xpdl2l9qmnHYuMHwQ==",
       "dev": true,
       "funding": [
         "https://github.com/sponsors/broofa",
         "https://github.com/sponsors/ctavan"
       ],
       "bin": {
-        "uuid": "dist/bin/uuid"
+        "uuid": "dist-node/bin/uuid"
+      }
+    },
+    "node_modules/uvu": {
+      "version": "0.5.6",
+      "resolved": "https://registry.npmjs.org/uvu/-/uvu-0.5.6.tgz",
+      "integrity": "sha512-+g8ENReyr8YsOc6fv/NVJs2vFdHBnBNdfE49rshrTzDWOlUx4Gq7KOS2GD8eqhy2j+Ejq29+SbKH8yjkAqXqoA==",
+      "dev": true,
+      "dependencies": {
+        "dequal": "^2.0.0",
+        "diff": "^5.0.0",
+        "kleur": "^4.0.3",
+        "sade": "^1.7.3"
+      },
+      "bin": {
+        "uvu": "bin.js"
+      },
+      "engines": {
+        "node": ">=8"
       }
     },
     "node_modules/web-worker": {
@@ -4746,15 +5373,18 @@
       "dev": true
     },
     "node_modules/yaml": {
-      "version": "2.6.0",
-      "resolved": "https://registry.npmjs.org/yaml/-/yaml-2.6.0.tgz",
-      "integrity": "sha512-a6ae//JvKDEra2kdi1qzCyrJW/WZCgFi8ydDV+eXExl95t+5R+ijnqHJbz9tmMh8FUjx3iv2fCQ4dclAQlO2UQ==",
+      "version": "2.9.1",
+      "resolved": "https://registry.npmjs.org/yaml/-/yaml-2.9.1.tgz",
+      "integrity": "sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==",
       "dev": true,
       "bin": {
         "yaml": "bin.mjs"
       },
       "engines": {
-        "node": ">= 14"
+        "node": ">= 14.6"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/eemeli"
       }
     },
     "node_modules/yargs": {
@@ -4841,15 +5471,6 @@
         "lodash-es": "^4.17.21"
       }
     },
-    "packages/hugoautogen/node_modules/dompurify": {
-      "version": "3.4.15",
-      "resolved": "https://registry.npmjs.org/dompurify/-/dompurify-3.4.15.tgz",
-      "integrity": "sha512-EUBjM+B+lkDE41iE82DDSCfkoPGfXx8IxFxPMjNzm/Uk4xDet77rTN9wqlxlVg71kK7XGuUMv6wUxJUwwv+Xyw==",
-      "dev": true,
-      "optionalDependencies": {
-        "@types/trusted-types": "^2.0.7"
-      }
-    },
     "packages/hugoautogen/node_modules/mermaid": {
       "version": "11.17.2",
       "resolved": "https://registry.npmjs.org/mermaid/-/mermaid-11.17.2.tgz",
@@ -4878,19 +5499,6 @@
         "stylis": "^4.3.6",
         "ts-dedent": "^2.2.0",
         "uuid": "^11.1.0 || ^12 || ^13 || ^14.0.0"
-      }
-    },
-    "packages/hugoautogen/node_modules/uuid": {
-      "version": "14.0.2",
-      "resolved": "https://registry.npmjs.org/uuid/-/uuid-14.0.2.tgz",
-      "integrity": "sha512-xZe/16rV4aa+HGSOCiY2YeLT1OybRLrrkL/Rqaq7p7GMVXjFh+6wN4oMYgjFmnSnhY8t6Xpdl2l9qmnHYuMHwQ==",
-      "dev": true,
-      "funding": [
-        "https://github.com/sponsors/broofa",
-        "https://github.com/sponsors/ctavan"
-      ],
-      "bin": {
-        "uuid": "dist-node/bin/uuid"
       }
     }
   }
