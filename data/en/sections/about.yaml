@@ -25,10 +25,6 @@ summary: 'I am an vigorous software engineer with several years of working exper
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
-- name: GitLab
-  icon: "fab fa-gitlab"
-  url: "https://gitlab.com/noritakaIzumi"
-
 - name: GitHub
   icon: "fab fa-github"
   url: "https://github.com/noritakaIzumi"
